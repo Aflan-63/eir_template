@@ -139,7 +139,7 @@ a:focus {
     background-color: rgba(156, 39, 176, 0.2);
 }
 
-.waves-effect.waves-green .waves-ripple {
+.waves-effect.waves-green .waves-ripplecontainer {
     background-color: rgba(76, 175, 80, 0.2);
 }
 
