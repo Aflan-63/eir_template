@@ -50,16 +50,6 @@
 
 }
 
-/* a {
-    color: var(--universal-dark) !important;
-    transition: var(--transtion-small) !important;
-}
-
-a:hover,
-a:active,
-a:focus {
-    color: var(--primary) !important;
-} */
 /* MATERIALIZE CSS OVERRIDES by Aflan */
 
 .teal {
@@ -229,3 +219,10 @@ input[type=search]:focus:not([readonly])+label,
 textarea.materialize-textarea:focus:not([readonly])+label {
     color: var(--primary) !important;
 }
+
+
+/*CSS added by JUEL*/
+/* .signin-page{
+    background:url(../images/login_bg.svg) no-repeat !important;
+    background-size:cover;
+} */
