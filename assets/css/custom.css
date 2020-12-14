@@ -222,7 +222,13 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 
 
 /*CSS added by JUEL*/
-/* .signin-page{
-    background:url(../images/login_bg.svg) no-repeat !important;
-    background-size:cover;
-} */
+.alert-danger span{
+    padding: 8px;
+    border-radius: 4px;
+    height: 40px;
+    color: white;
+    background-color: red;
+}
+.alert-danger span h6 {
+    font-weight: bold;
+}
