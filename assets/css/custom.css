@@ -222,13 +222,18 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 
 
 /*CSS added by JUEL*/
-.alert-danger span{
+.alert span{
     padding: 8px;
     border-radius: 4px;
     height: 40px;
     color: white;
-    background-color: red;
 }
-.alert-danger span h6 {
+.alert-danger span{
+    background-color: var(--danger);
+}
+.alert-success span {
+    background-color: var(--success);
+}
+.alert span h6 {
     font-weight: bold;
 }
