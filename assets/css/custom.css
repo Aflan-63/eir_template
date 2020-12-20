@@ -237,3 +237,15 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 .alert span h6 {
     font-weight: bold;
 }
+.w-100 {
+    width: 100%;
+}
+.m-b-0 {
+    margin-bottom: 0 !important;
+}
+.p-b-0 {
+    padding-bottom: 0 !important;
+}
+.btn-red {
+    color: var(--);
+}
