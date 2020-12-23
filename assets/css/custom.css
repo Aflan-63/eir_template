@@ -243,9 +243,15 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 .m-b-0 {
     margin-bottom: 0 !important;
 }
+.p-0 {
+    padding: 0;
+}
 .p-b-0 {
     padding-bottom: 0 !important;
 }
 .btn-red {
-    color: var(--);
+    color: var(--danger);
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background: var(--danger) !important;
 }
