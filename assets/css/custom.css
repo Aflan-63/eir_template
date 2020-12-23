@@ -172,6 +172,59 @@
     background-size: cover;
 }
 
+.font-red {
+    color: var(--primary) !important;
+    transition: var(--transtion-small) !important;
+}
+
+.font-red:hover {
+    color: var(--primary-shade) !important;
+}
+
+.font-golden {
+    transition: var(--transtion-small) !important;
+    color: var(--info) !important;
+}
+
+.font-golden:hover {
+    color: var(--info-hover) !important;
+}
+
+.align-items-left {
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: left !important;
+}
+
+.modal-sm {
+    width: 50% !important;
+    height: 50% !important;
+}
+
+.modal-md {
+    width: 75% !important;
+    height: 75% !important;
+}
+
+.modal-lg {
+    width: 85% !important;
+    height: 85% !important;
+}
+
+.modal-xl {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.text-color {
+    color: var(--universal-dark) !important;
+}
+
+.red-bg {
+    background: var(--primary) !important;
+}
+
+
 /*     animation: ripple 20s infinite; */
 @keyframes ripple {
     0% {
@@ -222,36 +275,45 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 
 
 /*CSS added by JUEL*/
-.alert span{
+.alert span {
     padding: 8px;
     border-radius: 4px;
     height: 40px;
     color: white;
 }
-.alert-danger span{
+
+.alert-danger span {
     background-color: var(--danger);
 }
+
 .alert-success span {
     background-color: var(--success);
 }
+
 .alert span h6 {
     font-weight: bold;
 }
+
 .w-100 {
     width: 100%;
 }
+
 .m-b-0 {
     margin-bottom: 0 !important;
 }
+
 .p-0 {
     padding: 0;
 }
+
 .p-b-0 {
     padding-bottom: 0 !important;
 }
+
 .btn-red {
     color: var(--danger);
 }
+
 .dataTables_wrapper .dataTables_paginate .paginate_button.current {
     background: var(--danger) !important;
 }
