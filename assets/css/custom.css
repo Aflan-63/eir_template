@@ -224,6 +224,28 @@
     background: var(--primary) !important;
 }
 
+.red-bg-fab {
+    transition: var(--transtion-medium) !important;
+    background: var(--primary) !important;
+}
+
+.red-bg-fab:hover {
+    background: var(--danger-hover) !important;
+}
+
+.small-text {
+    font-size: 0.9em !important;
+}
+
+.error-page {
+    background-image: url(../images/login_bg.svg) !important;
+}
+
+.text-black {
+    color: var(--universal-dark) !important;
+}
+
+
 
 /*     animation: ripple 20s infinite; */
 @keyframes ripple {
