@@ -237,12 +237,20 @@
     font-size: 0.9em !important;
 }
 
+.very-small-text {
+    font-size: 0.7em !important;
+}
+
 .error-page {
     background-image: url(../images/login_bg.svg) !important;
 }
 
 .text-black {
     color: var(--universal-dark) !important;
+}
+
+.text-red {
+    color: var(--primary) !important;
 }
 
 
