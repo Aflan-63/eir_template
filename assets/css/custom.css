@@ -253,6 +253,43 @@
     color: var(--primary) !important;
 }
 
+.dark-grey {
+    background: var(--secondary-hover) !important;
+}
+
+.light-grey {
+    color: var(--universal-dark) !important;
+    background: var(--light-disable) !important;
+}
+
+.green-bg {
+    background: var(--success) !important;
+}
+
+.green-text {
+    color: var(--success) !important;
+}
+
+.golden-bg {
+    background: var(--info) !important;
+}
+
+.golden-text {
+    color: var(--info) !important;
+}
+
+.black-bg {
+    background: var(--universal-dark) !important;
+}
+
+.purple-bg {
+    background: var(--warning) !important;
+}
+
+.purple-text {
+    color: var(--warning) !important;
+}
+
 
 
 /*     animation: ripple 20s infinite; */
@@ -345,5 +382,5 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button.current {
-    background: var(--danger) !important;
+    background: var(--primary) !important;
 }

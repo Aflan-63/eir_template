@@ -3,7 +3,7 @@
 
 <head>
     <!-- Title -->
-    <title>IMEI Checker</title>
+    <title>Tuple Checker</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta charset="UTF-8">
@@ -54,7 +54,7 @@
                     <div class="circle"></div>
                 </div>
             </div>
-            <div class="spinner-layer spinner-teal lighten-1">
+            <div class="spinner-layer lighten-1">
                 <div class="circle-clipper left">
                     <div class="circle"></div>
                 </div>
@@ -100,7 +100,7 @@
                         </a>
                     </section>
                     <div class="header-title col s3 m3">
-                        <span class="chapter-title">EIR</span>
+                        <span>EIR</span>
                     </div>
                     <form class="left search col s6 hide-on-small-and-down">
                         <div class="input-field">
@@ -117,11 +117,7 @@
                     <a href="javascript: void(0)" class="close-search"><i class="material-icons">close</i></a>
                 </form> -->
                     <ul class="right col s9 m3 nav-right-menu">
-                        <!-- <li><a href="javascript:void(0)" data-activates="chat-sidebar"
-                            class="chat-button show-on-large"><i class="material-icons">more_vert</i></a></li> -->
-                        <!--<li class="hide-on-small-and-down"><a href="javascript:void(0)" data-activates="dropdown1"
-                            class="dropdown-button dropdown-right show-on-large"><i
-                                class="material-icons">notifications_none</i><span class="badge">4</span></a></li>-->
+
                         <li class="hide-on-med-and-up"><a href="javascript:void(0)" class="search-toggle"><i
                                     class="material-icons">search</i></a></li>
                     </ul>
@@ -210,8 +206,8 @@
                             Services<i class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
                         <div class="collapsible-body">
                             <ul>
-                                <li><a href="" class="active-page">IMEI Checker</a></li>
-                                <li><a href="">Tuple Checker</a></li>
+                                <li><a href="">IMEI Checker</a></li>
+                                <li><a href="" class="active-page">Tuple Checker</a></li>
                             </ul>
                         </div>
                     </li>
@@ -247,10 +243,10 @@
                         <div class="card-content">
                             <div class="card-options">
                                 <ul>
-                                    <li class="red-text"><span class="badge light-grey lighten-1">white</span></li>
+                                    <li class="red-text"><span class="badge light-grey lighten-1">Total</span></li>
                                 </ul>
                             </div>
-                            <span class="card-title">IMEI</span>
+                            <span class="card-title">IMEI & IMSI</span>
                             <span class="stats-counter"><span class="counter">48190</span><small>This
                                     month</small></span>
                             <div class="percent-info golden-text">8% <i class="material-icons">trending_up</i></div>
@@ -265,10 +261,10 @@
                         <div class="card-content">
                             <div class="card-options">
                                 <ul>
-                                    <li class="red-text"><span class="badge dark-grey lighten-1">Grey</span></li>
+                                    <li class="red-text"><span class="badge dark-grey lighten-1">IMEI</span></li>
                                 </ul>
                             </div>
-                            <span class="card-title">IMEI</span>
+                            <span class="card-title">TOTAL</span>
                             <span class="stats-counter"><span class="counter">83710</span><small>This
                                     month</small></span>
                             <div class="percent-info green-text">8% <i class="material-icons">trending_up</i></div>
@@ -284,10 +280,10 @@
                         <div class="card-content">
                             <div class="card-options">
                                 <ul>
-                                    <li class="red-text"><span class="badge black lighten-1">Black</span></li>
+                                    <li class="red-text"><span class="badge black lighten-1">IMSI</span></li>
                                 </ul>
                             </div>
-                            <span class="card-title">IMEI</span>
+                            <span class="card-title">Total</span>
                             <span class="stats-counter"><span class="counter">23230</span><small>this
                                     month</small></span>
                             <div class="percent-info red-text">8% <i class="material-icons">trending_up</i></div>
@@ -302,12 +298,13 @@
             <div class="row no-m-t no-m-b">
                 <div class="row">
                     <div class="col s12 m12 l3">
-                        <div class=" alert red-bg">
+                        <div class="alert red-bg">
                             <span class="valign-wrapper">
                                 <i class="small material-icons">notification_important</i>
-                                <p> Invalid IMEI number, please try again!</p>
+                                <p> Invalid IMEI or IMSI number, please try again!</p>
                             </span>
                         </div>
+
                         <div class="card">
                             <div class="card-content">
                                 <div class="row">
@@ -318,7 +315,12 @@
                                             <label for="first_name">IMEI</label>
                                         </div>
                                         <p class="col s12">Example: 123456789012345</p>
-                                       
+                                        <div class="input-field col s12">
+                                            <input placeholder="15 Digit IMSI Number" id="imsi" type="text"
+                                                class="validate">
+                                            <label for="first_name">IMSI</label>
+                                        </div>
+                                        <p class="col s12">Example: 012345123456789</p>
                                     </form>
                                 </div>
                                 <div class="row">
@@ -342,6 +344,7 @@
                                         <tr>
                                             <th>ID</th>
                                             <th>IMEI</th>
+                                            <th>IMSI</th>
                                             <th>Status</th>
                                             <th>Date</th>
                                         </tr>
@@ -349,6 +352,7 @@
                                     <tbody>
                                         <tr>
                                             <td>#203</td>
+                                            <td>PayPal</td>
                                             <td>PayPal</td>
                                             <td>
                                                 <p style="max-width: min(100%,150px);"
@@ -362,6 +366,7 @@
                                         <tr>
                                             <td>#203</td>
                                             <td>PayPal</td>
+                                            <td>PayPal</td>
                                             <td>
                                                 <p style="max-width: min(100%,150px);"
                                                     class="new badge green-bg rounded center-align white-text">White
@@ -373,6 +378,7 @@
                                         <tr>
                                             <td>#203</td>
                                             <td>PayPal</td>
+                                            <td>PayPal</td>
                                             <td>
                                                 <p style="max-width: min(100%,150px);"
                                                     class="new badge dark-grey rounded center-align white-text">Grey
@@ -383,6 +389,7 @@
                                         </tr>
                                         <tr>
                                             <td>#203</td>
+                                            <td>PayPal</td>
                                             <td>PayPal</td>
                                             <td>
                                                 <p style="max-width: min(100%,150px);"
