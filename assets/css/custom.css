@@ -20,10 +20,12 @@
     --danger: #FF4F70;
     --danger-hover: #B43D53;
     --danger-disable: #E5A9B4;
+    --danger-disable-light: #f8d5dc;
     /* Warning */
     --warning: #8F2D56;
     --warning-hover: #6B2341;
     --warning-disable: #8F5E73;
+
     /* Info */
     --info: #DEAC90;
     --info-hover: #B1866D;
@@ -289,6 +291,44 @@
 .purple-text {
     color: var(--warning) !important;
 }
+
+.picker__weekday-display {
+    background-color: var(--danger-hover) !important;
+}
+
+.picker__date-display {
+    background-color: var(--danger) !important;
+}
+
+.picker__nav--prev:hover,
+.picker__nav--next:hover {
+    border-right: var(--universal-white) !important;
+    border-left: var(--universal-white) !important;
+    background-color: var(--danger-disable-light) !important;
+}
+
+.picker__box,
+.picker__select--month.browser-default,
+.picker__select--year.browser-default {
+    transition: var(--transtion-long) !important;
+}
+
+select:focus {
+    outline: 1px solid var(--primary) !important;
+}
+
+
+.picker__close,
+.picker__today {
+    color: var(--primary) !important;
+}
+
+.picker__day.picker__day--today {
+    color: var(--primary) !important;
+    font-weight: bold !important;
+}
+
+
 
 
 
