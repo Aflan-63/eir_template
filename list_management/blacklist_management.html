@@ -3,7 +3,7 @@
 
 <head>
     <!-- Title -->
-    <title>Manage Role | EIR</title>
+    <title>Manage User | EIR</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta charset="UTF-8">
@@ -231,129 +231,80 @@
         </div>
     </aside>
     <main class="mn-inner">
-        <div class="row no-m-t no-m-b">
-            <div class="col s12 m12 l4">
-                <div class="card stats-card">
-                    <div class="card-content">
-                        <div class="card-options">
-                            <ul>
-                                <li class="red-text"><span class="badge cyan lighten-1">gross</span></li>
-                            </ul>
-                        </div>
-                        <span class="card-title">Sales</span>
-                        <span class="stats-counter">$<span class="counter">48190</span><small>This
-                                    week</small></span>
-                    </div>
-                    <div id="sparkline-bar"></div>
-                </div>
-            </div>
-            <div class="col s12 m12 l4">
-                <div class="card stats-card">
-                    <div class="card-content">
-                        <div class="card-options">
-                            <ul>
-                                <li><a href="javascript:void(0)"><i class="material-icons">more_vert</i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <span class="card-title">Page views</span>
-                        <span class="stats-counter"><span class="counter">83710</span><small>This
-                                    month</small></span>
-                    </div>
-                    <div id="sparkline-line"></div>
-                </div>
-            </div>
-            <div class="col s12 m12 l4">
-                <div class="card stats-card">
-                    <div class="card-content">
-                        <span class="card-title">Reports</span>
-                        <span class="stats-counter"><span class="counter">23230</span><small>Last
-                                    week</small></span>
-                        <div class="percent-info green-text">8% <i class="material-icons">trending_up</i></div>
-                    </div>
-                    <div class="progress stats-card-progress">
-                        <div class="determinate" style="width: 70%"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="row m-t-xs">
-            <div class="col s12 m12 l12">
+            <div class="col s12 m6 l6">
+                <h5>Total Blacklisted: 12345</h5>
+            </div><div class="col s12 m6 l6">
                 <a href="#create_user_modal" class="waves-effect waves-light btn red right modal-trigger"><i
-                        class="material-icons left">add</i>CREATE NEW ROLE</a>
+                        class="material-icons left">add</i>CREATE BLACKLIST</a>
             </div>
         </div>
         <div class="row no-m-t no-m-b">
             <div class="col s12 m12 l12 alert alert-danger">
                     <span class="valign-wrapper">
                         <i class="small material-icons">notification_important</i>
-                        <p> Couldn't create the role, Please try again!</p>
+                        <p> Couldn't create the user, Please try again!</p>
                     </span>
             </div>
             <div class="col s12 m12 l12 alert alert-success">
                     <span class="valign-wrapper">
                         <i class="small material-icons">task_alt</i>
-                        <p> User <b>dev.role</b> has created successfully. You can view, edit the in the
+                        <p> User <b>dev.user</b> has created successfully. You can view, edit the in the
                             below.</p>
                     </span>
             </div>
             <div class="col s12 m12 l12 alert alert-danger">
                     <span class="valign-wrapper">
                         <i class="small material-icons">notification_important</i>
-                        <p> Couldn't update the role, Please try again!</p>
+                        <p> Couldn't update the user, Please try again!</p>
                     </span>
             </div>
             <div class="col s12 m12 l12 alert alert-success">
                     <span class="valign-wrapper">
                         <i class="small material-icons">task_alt</i>
-                        <p> User dev.role has updated successfully. You can view, edit the in the below.</p>
+                        <p> User dev.user has updated successfully. You can view, edit the in the below.</p>
                     </span>
             </div>
             <div class="col s12 m12 l12 alert alert-danger">
                     <span class="valign-wrapper">
                         <i class="small material-icons">notification_important</i>
-                        <p> Couldn't delete the role, Please try again!</p>
+                        <p> Couldn't delete the user, Please try again!</p>
                     </span>
             </div>
             <div class="col s12 m12 l12 alert alert-success">
                     <span class="valign-wrapper">
                         <i class="small material-icons">task_alt</i>
-                        <p> User dev.role has updated successfully.</p>
+                        <p> User dev.user has updated successfully.</p>
                     </span>
             </div>
             <div class="row">
                 <div class="col s12">
                     <div class="card">
                         <div class="card-content">
-                            <span class="card-title">Role List</span>
-                            <table id="manage_roles_tbl"
+                            <span class="card-title">User List</span>
+                            <table id="manage_users_tbl"
                                    class="display responsive-table datatable-example data_table">
                                 <thead>
                                 <tr>
                                     <th>ID</th>
-                                    <th>Role Name</th>
+                                    <th>IMEI Number</th>
+                                    <th>IMSI Number</th>
                                     <th>Status</th>
-                                    <th>Opening Date</th>
-                                    <th>More Details</th>
+                                    <th>Date</th>
                                     <th>Actions</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
                                     <td>#203</td>
-                                    <td>PayPal</td>
-                                    <td>22-12-2020</td>
+                                    <td>01833184012</td>
+                                    <td>01833184012</td>
+                                    <td><button class="btn btn-sm grey">White Listed</button></td>
                                     <td>10.00 AM 21/12/2020</td>
-                                    <td><a class="waves-effect waves-teal btn-flat modal-trigger"
-                                           href="#details_role_modal"><i
-                                            class="material-icons left">visibility</i>View
-                                        Details</a></td>
-                                    <td>
-
-                                    <td><a class="modal-trigger" href="#edit_role_modal"><i
+                                    <td><a class="modal-trigger" href="#edit_user_modal"><i
                                             class="fa fa-edit font-golden"></i>
                                         <span class="text-color">edit</span> </a> /
-                                        <a href="#delete_role_modal" class="modal-trigger">
+                                        <a href="#delete_user_modal" class="modal-trigger">
                                             <i class="fa fa-trash font-red"></i> <span
                                                 class="text-color">delete</span></a>
                                     </td>
@@ -387,173 +338,82 @@
 </div>
 <div class="left-sidebar-hover"></div>
 
-<!-- Create Role Modal -->
-<div id="create_role_modal" class="modal">
+<!-- Create User Modal -->
+<div id="create_user_modal" class="modal">
     <div class="modal-content">
-        <h4>New User</h4>
+        <h4>New Blacklist</h4>
         <div class="divider"></div>
-        <div class="row">
-            <form class="col s12">
-                <div class="row">
-                    <div class="col m6">
-                        <div class="input-field col s12">
-                            <input id="name" type="text" class="validate">
-                            <label for="name">Role Name</label>
-                        </div>
-                        <div class="input-field col s12">
-                            <input id="status" type="text" class="validate">
-                            <label for="status">Role Status</label>
-                        </div>
-                        <div class="input-field col s12">
-                            <textarea id="description" class="materialize-textarea"></textarea>
-                            <label for="description">Role Description</label>
-                        </div>
-                        <p class="red-text">* all fields mandatory.</p>
+        <form class="col s12 l6">
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="input-field col s12">
+                        <input id="imei_number" type="text" class="validate">
+                        <label for="imei_number">IMEI Number</label>
                     </div>
-                    <div class="col m6">
-                        <div class="col s12">
-                            <b class="red-text">Guideline #1</b>
-                            <p>You can give any role name you want, however for easily understandable operations, we would recommend you to provide common words such as admin, user, manager etc.</p>
-                        </div>
-                        <div class="col s12">
-                            <b class="red-text">Guideline #2</b>
-                            <p>Set the status to inactive, if you do not want the role to be visible on the assignment page, Please make a note, if you want to assign a role: you have to the status to active.</p>
-                        </div>
-                        <div class="col s12">
-                            <b class="red-text">Guideline #3</b>
-                            <p>Give a meaningful description because it will help with the purpose of the role</p>
-                        </div>
+                    <div class="input-field col s12">
+                        <input id="imsi_number" type="text" class="validate">
+                        <label for="imsi_number">(Optional) IMSI Number</label>
                     </div>
                 </div>
-                <div class="divider"></div>
-                <div class="row">
-                    <div class="col s12 m12 l12 center">
-                        <div class="section">
-                        <button type="submit" class="waves-effect waves-light btn red center"><i
-                                class="material-icons left">add</i>CREATE NEW ROLE
-                        </button>
-                        </div>
-                    </div>
+                <div class="col s12 m6">
+                    <p class="red-text"><b>info:</b></p>
+                    <p>Blacklisted devices are those devices which are not bought legally. If the IMEI/IMSI doesn't matches with the database, then the device is blacklisted.</p>
                 </div>
-            </form>
-        </div>
+            </div>
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col s12 m12 l12 center">
+                    <button type="submit" class="waves-effect waves-light btn red center"><i
+                            class="material-icons left">add</i>CREATE BLACKLIST
+                    </button>
+                </div>
+            </div>
+        </form>
     </div>
 </div>
 
-<!-- Edit Role Modal -->
-<div id="edit_role_modal" class="modal">
+<!-- Edit User -->
+<div id="edit_user_modal" class="modal">
     <div class="modal-content">
-        <h4>New User</h4>
+        <h4>Edit</h4>
         <div class="divider"></div>
-        <div class="row">
-            <form class="col s12">
-                <div class="row">
-                    <div class="col m6">
-                        <div class="input-field col s12">
-                            <input id="name_edit" type="text" class="validate">
-                            <label for="name">Role Name</label>
-                        </div>
-                        <div class="input-field col s12">
-                            <input id="status_edit" type="text" class="validate">
-                            <label for="status">Role Status</label>
-                        </div>
-                        <div class="input-field col s12">
-                            <textarea id="description_edit" class="materialize-textarea"></textarea>
-                            <label for="description">Role Description</label>
-                        </div>
-                        <p class="red-text">* all fields mandatory.</p>
+        <form class="col s12 l6">
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="input-field col s12">
+                        <input id="imei_number_edit" type="text" class="validate" value="01833184012">
+                        <label for="imei_number_edit">IMEI Number</label>
                     </div>
-                    <div class="col m6">
-                        <div class="col s12">
-                            <b class="red-text">Guideline #1</b>
-                            <p>You can give any role name you want, however for easily understandable operations, we would recommend you to provide common words such as admin, user, manager etc.</p>
-                        </div>
-                        <div class="col s12">
-                            <b class="red-text">Guideline #2</b>
-                            <p>Set the status to inactive, if you do not want the role to be visible on the assignment page, Please make a note, if you want to assign a role: you have to the status to active.</p>
-                        </div>
-                        <div class="col s12">
-                            <b class="red-text">Guideline #3</b>
-                            <p>Give a meaningful description because it will help with the purpose of the role</p>
-                        </div>
+                    <div class="input-field col s12">
+                        <input id="imsi_number_edit" type="text" class="validate">
+                        <label for="imsi_number_edit">(Optional) IMSI Number</label>
                     </div>
                 </div>
-                <div class="divider"></div>
-                <div class="row">
-                    <div class="col s12 m12 l12 center">
-                        <div class="section">
-                        <button type="submit" class="waves-effect waves-light btn red center"><i
-                                class="material-icons left">add</i>Update ROLE
-                        </button>
-                        </div>
-                    </div>
+                <div class="col s12 m6">
+                    <p class="red-text"><b>info:</b></p>
+                    <p>Blacklisted devices are those devices which are not bought legally. If the IMEI/IMSI doesn't matches with the database, then the device is blacklisted.</p>
                 </div>
-            </form>
-        </div>
+            </div>
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col s12 m12 l12 center">
+                    <button type="submit" class="waves-effect waves-light btn red center"><i
+                            class="material-icons left">add</i>UPDATE BLACKLIST
+                    </button>
+                </div>
+            </div>
+        </form>
     </div>
 </div>
 
-<!-- Details Role Modal -->
-<div id="details_role_modal" class="modal">
-    <div class="modal-content">
-        <h4>New User</h4>
-        <div class="divider"></div>
-        <div class="row">
-            <form class="col s12">
-                <div class="row">
-                    <div class="col m6">
-                        <div class="input-field col s12">
-                            <input id="name_dt" type="text" class="validate">
-                            <label for="name">Role Name</label>
-                        </div>
-                        <div class="input-field col s12">
-                            <input id="status_dt" type="text" class="validate">
-                            <label for="status">Role Status</label>
-                        </div>
-                        <div class="input-field col s12">
-                            <textarea id="description_dt" class="materialize-textarea"></textarea>
-                            <label for="description">Role Description</label>
-                        </div>
-                        <p class="red-text">* all fields mandatory.</p>
-                    </div>
-                    <div class="col m6">
-                        <div class="col s12">
-                            <b class="red-text">Guideline #1</b>
-                            <p>You can give any role name you want, however for easily understandable operations, we would recommend you to provide common words such as admin, user, manager etc.</p>
-                        </div>
-                        <div class="col s12">
-                            <b class="red-text">Guideline #2</b>
-                            <p>Set the status to inactive, if you do not want the role to be visible on the assignment page, Please make a note, if you want to assign a role: you have to the status to active.</p>
-                        </div>
-                        <div class="col s12">
-                            <b class="red-text">Guideline #3</b>
-                            <p>Give a meaningful description because it will help with the purpose of the role</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="divider"></div>
-                <div class="row">
-                    <div class="col s12 m12 l12 center">
-                        <div class="section">
-                        <button type="submit" class="waves-effect waves-light btn red center"><i
-                                class="material-icons left">add</i>Update ROLE
-                        </button>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-
-<!-- Delete Role Modal -->
-<div id="delete_role_modal" class="modal">
+<!-- Delete User Modal -->
+<div id="delete_user_modal" class="modal">
     <div class="modal-content">
         <h5 class="modal-title">Confirm Action</h5>
         <div class="divider"></div>
-        <p>Are you sure to want delete the user <b>dev.role</b></p>
-        <p>Deleting an role is permanent and can not be undone. Please confirm if you really want to delete the
-            user.</p>
+        <p>Are you sure to want delete the IMEI <b>01833184012</b>?</p>
+        <p>Note: Deleting an IMEI is permanent and can not be undone. Please confirm if you really want to delete the
+            IMEI.</p>
         <div class="divider"></div>
         <div class="section center-align">
             <a href="#password_policy_modal" class="modal-action modal-close waves-effect btn red">Confirm</a>
