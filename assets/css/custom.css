@@ -169,7 +169,7 @@
 .signin-page {
     height: 100%;
     width: 100%;
-    animation: ripple 20s infinite;
+    /* animation: ripple 20s infinite; */
     background: url('../images/login_bg.svg') no-repeat;
     background-size: cover;
 }
@@ -328,12 +328,22 @@ select:focus {
     font-weight: bold !important;
 }
 
+[type="checkbox"]:checked+label:before {
+    border-right: 2px solid var(--universal-white) !important;
+    border-bottom: 2px solid var(--universal-white) !important;
+}
+
+[type="checkbox"].filled-in:checked+label:after {
+    border: 2px solid var(--primary) !important;
+    background-color: var(--primary) !important;
+}
+
 
 
 
 
 /*     animation: ripple 20s infinite; */
-@keyframes ripple {
+/* @keyframes ripple {
     0% {
         opacity: 1;
         transform: scale(1.0);
@@ -348,7 +358,7 @@ select:focus {
         opacity: 1;
         transform: scale(1.0);
     }
-}
+} */
 
 
 input[type=text]:focus:not([readonly]),

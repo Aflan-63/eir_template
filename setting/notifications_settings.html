@@ -3,7 +3,7 @@
 
 <head>
     <!-- Title -->
-    <title>General Settings</title>
+    <title>Notifications</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta charset="UTF-8">
@@ -222,8 +222,8 @@
                                 class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
                         <div class="collapsible-body">
                             <ul>
-                                <li><a href="" class="active-page">General Settings</a></li>
-                                <li><a href="">Notifications</a></li>
+                                <li><a href="">General Settings</a></li>
+                                <li><a href="" class="active-page">Notifications</a></li>
                             </ul>
                         </div>
                     </li>
@@ -240,42 +240,12 @@
             <div class="row">
                 <div class="col s12 m4 l4">
                     <div class="card">
-                        <div class="card-image">
-                            <img src="../assets/images/profile.jpg" class="img-responsive">
-                            <span class="card-title">Ifaz Ahmed Aflan</span>
-                        </div>
                         <div class="card-content">
-                            <h5><strong class="">My Information</strong></h5>
-                            <p id="user"><b class="text-black">Ifaz Ahmed Aflan</b></p>
-                            <p id="useremail">ifazahmed@iut-dhaka.edu</p>
-                            <p id="userphoneno">+8801833184012</p>
-                            <p id="useraddress">Uttara, Dhaka</p>
-                            <p id="username">ifaz.ahmed</p>
-                            <p id="useropeningdate">23 December, 2020</p>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col s12 m4 l4">
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="card-title">Update Information</div>
-                            <p>Leave blank if you do not want to change any field. Profile picture must be JPG or PNG
-                                and not more than 2MB.</p> </br>
+                            <div class="card-title">Notification Controls</div>
+                            <p>Set your email or SMS or both notification. Leave any or all fields black if you do not
+                                want to change.</p> </br>
                             <div class="row">
-                                <div class="col s12 alert red-bg">
-                                    <span class="valign-wrapper">
-                                        <i class="small material-icons">notification_important</i>
-                                        <h6>Picture size exceeds 2MB!</h6>
-                                    </span>
-                                </div>
-                                <div class="col s12 alert red-bg">
-                                    <span class="valign-wrapper">
-                                        <i class="small material-icons">notification_important</i>
-                                        <h6>Name is invalid!</h6>
-                                    </span>
-                                </div>
+
                                 <div class="col s12 alert red-bg">
                                     <span class="valign-wrapper">
                                         <i class="small material-icons">notification_important</i>
@@ -291,39 +261,37 @@
                                 <div class="col s12 alert green-bg">
                                     <span class="valign-wrapper">
                                         <i class="small material-icons">check</i>
-                                        <h6>Information updated successfully!</h6>
+                                        <h6>Controls updated successfully!</h6>
                                     </span>
-                                </div> </br>
+                                </div>
 
-                                <form action="#" class="p-v-xs">
-                                    <div class="file-field input-field col s12">
-                                        <div class="btn dark-grey lighten-1">
-                                            <span>Upload</span>
-                                            <input type="file">
-                                        </div>
-                                        <div class="file-path-wrapper">
-                                            <input class="file-path validate" placeholder="Browse" type="text">
-                                        </div>
-                                    </div>
-                                    <div class="input-field col s12">
-                                        <input placeholder="John Doe" id="name" type="text" class="validate">
-                                        <label for="name">Name</label>
-                                    </div>
-                                    <div class="input-field col s12">
-                                        <input placeholder="johndoe@gmail.com" id="email" type="email" class="validate">
-                                        <label for="email">Email</label>
-                                    </div>
-                                    <div class="input-field col s12">
-                                        <input placeholder="018XXXXXXXX" id="telno" type="tel" class="validate">
-                                        <label for="telno">Phone No</label>
-                                    </div>
-                                    <div class="input-field col s12">
-                                        <input placeholder="Uttara, Dhaka" id="address" type="text" class="validate">
-                                        <label for="address">Address</label>
-                                    </div>
-                                    <a href="#" class="waves-effect waves-light btn btn-large green-bg">Update</a>
-                                </form>
+                                <div class="row">
+                                    <h5 class="col s12"> <strong>Notifications</strong></h5>
+                                    <form action="#" class="p-v-xs">
+                                        <div class="input-field col s12">
 
+                                            <input type="checkbox" class="filled-in" id="test5" />
+                                            <label for="test5">Activate Notifications</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="row">
+                                    <h5 class="col s12"> <strong>Destination</strong></h5>
+                                    <form action="#" class="p-v-xs">
+                                        <div class="input-field col s12">
+                                            <input placeholder="018XXXXXXXX" id="sms" type="tel" class="validate">
+                                            <label for="sms">SMS</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <input placeholder="johndoe@gmail.com" id="email" type="email"
+                                                class="validate">
+                                            <label for="email">Email</label>
+                                            <p class="small-text">If you activate notifications, you must set at
+                                                least one destination.</p>
+                                        </div>
+                                        <a href="#" class="m-l-sm waves-effect waves-light btn red-bg m-t-sm">Update</a>
+                                    </form>
+                                </div>
                             </div>
 
                         </div>
@@ -333,49 +301,57 @@
                 <div class="col s12 m4 l4">
                     <div class="card">
                         <div class="card-content">
-                            <div class="card-title">Change Password</div>
-                            <p>Leave blank if you do not want to change your password.</p> </br>
+                            <div class="card-title">Notification Type</div>
+                            <p>Set types of notification that you want to get.</p> </br>
                             <div class="row">
                                 <div class="col s12 alert red-bg">
                                     <span class="valign-wrapper">
                                         <i class="small material-icons">notification_important</i>
-                                        <h6>Password doesn't match our policy!</h6>
+                                        <h6>Something went wrong!</h6>
                                     </span>
                                 </div>
-
-                                <div class="col s12 alert red-bg">
-                                    <span class="valign-wrapper">
-                                        <i class="small material-icons">notification_important</i>
-                                        <h6>Current password doesn't match!</h6>
-                                    </span>
-                                </div>
-
                                 <div class="col s12 alert green-bg">
                                     <span class="valign-wrapper">
-                                        <i class="small material-icons">notification_important</i>
-                                        <h6>Password updated successfully!</h6>
+                                        <i class="small material-icons">check</i>
+                                        <h6>Notification type updated sucessfully!</h6>
                                     </span>
                                 </div>
                                 <form action="#" class="p-v-xs">
                                     <div class="input-field col s12">
-                                        <input placeholder="John Doe" id="currentpassword" type="password"
-                                            class="validate">
-                                        <label for="name"> <b> Current Password</b></label>
+                                        <input type="checkbox" class="filled-in" id="whitelist_notification" />
+                                        <label for="whitelist_notification">Whitelist Notification</label>
                                     </div>
                                     <div class="input-field col s12">
-                                        <input placeholder="johndoe@gmail.com" id="newpassword" type="password"
-                                            class="validate">
-                                        <label for="email"><b> New Password</b></label>
-                                        <p class="very-small-text">New Password must follow our
-                                            <a href="#password_policy_modal" class="red-text modal-trigger"> Password
-                                                Policy</a></p></br>
+                                        <input type="checkbox" class="filled-in" id="blacklist_notification" />
+                                        <label for="blacklist_notification">Blacklist Notification</label>
                                     </div>
                                     <div class="input-field col s12">
-                                        <input placeholder="018XXXXXXXX" id="confirmpassword" type="password"
-                                            class="validate">
-                                        <label for="telno"><b> Confirm Password</b></label>
+                                        <input type="checkbox" class="filled-in" id="greylist_notification" />
+                                        <label for="greylist_notification">Greylist Notification</label>
                                     </div>
-                                    <a href="#" class="waves-effect waves-light btn btn-large golden-bg">Update</a>
+                                    <div class="input-field col s12">
+                                        <input type="checkbox" class="filled-in" id="complaints_notification" />
+                                        <label for="complaints_notification">Complaint Notification</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <input type="checkbox" class="filled-in" id="imei_notification" />
+                                        <label for="imei_notification">IMEI Notification</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <input type="checkbox" class="filled-in" id="tuple_device_notification" />
+                                        <label for="tuple_device_notification">Tuple & Device Verify
+                                            Notification</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <input type="checkbox" class="filled-in" id="userinfo_update_notification" />
+                                        <label for="userinfo_update_notification">User Information Change
+                                            Notification</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <input type="checkbox" class="filled-in" id="password_change_notification" />
+                                        <label for="password_change_notification">Password Change Notification</label>
+                                    </div>
+                                    <a href="#" class="m-l-sm waves-effect waves-light btn red-bg m-t-lg">Update</a>
                                 </form>
 
                             </div>
@@ -397,7 +373,7 @@
                         <i class="material-icons arrow-r">arrow_forward</i>
                         <span class="direction">Next</span>
                         <div>
-                            Notifications
+                            Dashboard
                         </div>
                     </a>
                 </div>
@@ -408,27 +384,6 @@
 
 
     <!-- JavaScript -->
-
-    <!-- Password Policy Modal -->
-    <div id="password_policy_modal" class="modal">
-        <div class="modal-content">
-            <h4>Password Policy</h4>
-            <h5>
-                We are very strict about our password policy. Read through our policy to maintain our password policy
-                to continuously use our services without interruption.
-            </h5>
-            <ol>
-                <li>Password <b>MUST</b> be changed in every 3 month.</li>
-                <li>Password <b>MUST</b> contain at least one number.</li>
-                <li>Password <b>MUST</b> contain at least one uppercase and one lower case letter.</li>
-                <li>Password <b>MUST</b> contain one special character [@,$,%,&,^].</li>
-                <li>Password <b>MUST</b> be long at least 8 characters.</li>
-            </ol>
-        </div>
-        <div class="modal-footer">
-            <a href="#password_policy_modal" class="modal-action modal-close waves-effect btn red">Close</a>
-        </div>
-    </div>
 
 
     <!-- Javascripts -->
