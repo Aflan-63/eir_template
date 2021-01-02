@@ -1,10 +1,597 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Title -->
+    <title>Manage User | EIR</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="description" content="Responsive Admin Dashboard Template"/>
+    <meta name="keywords" content="admin,dashboard"/>
+    <meta name="author" content="Steelcoders"/>
+
+
+    <!-- Styles -->
+    <link type="text/css" rel="stylesheet" href="../assets/plugins/materialize/css/materialize.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../assets/plugins/metrojs/MetroJs.min.css" rel="stylesheet">
+    <link href="../assets/plugins/weather-icons-master/css/weather-icons.min.css" rel="stylesheet">
+    <!--DataTable-->
+    <link href="../assets/plugins/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="../assets/plugins/material-preloader/css/materialPreloader.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.min.css">
+
+    <!-- Theme Styles -->
+    <link href="../assets/css/alpha.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/css/custom.css" rel="stylesheet" type="text/css"/>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
+
 <body>
+<div class="loader-bg"></div>
+<div class="loader">
+    <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+        <div class="spinner-layer spinner-teal lighten-1">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+        <div class="spinner-layer spinner-yellow">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+        <div class="spinner-layer spinner-green">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mn-content fixed-sidebar">
+    <header class="mn-header navbar-fixed">
+        <nav class="red darken-1">
+            <div class="nav-wrapper row">
+                <section class="material-design-hamburger navigation-toggle">
+                    <a href="javascript:void(0)" data-activates="slide-out"
+                       class="button-collapse show-on-large material-design-hamburger__icon">
+                        <span class="material-design-hamburger__layer"></span>
+                    </a>
+                </section>
+                <div class="header-title col s3 m3">
+                    <span class="chapter-title">Equipment Interchange Receipt (EIR)</span>
+                </div>
+                <form class="left search col s6 hide-on-small-and-down">
+                    <div class="input-field">
+                        <input id="search" type="search" placeholder="Search" autocomplete="off">
+                        <label for="search"><i class="material-icons search-icon">search</i></label>
+                    </div>
+                    <a href="javascript: void(0)" class="close-search"><i class="material-icons">close</i></a>
+                </form>
+                <ul class="right col s9 m3 nav-right-menu">
+                    <li class="hide-on-med-and-up"><a href="javascript:void(0)" class="search-toggle"><i
+                            class="material-icons">search</i></a></li>
+                </ul>
+
+                <ul id="dropdown1" class="dropdown-content notifications-dropdown">
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <aside id="slide-out" class="side-nav white fixed">
+        <div class="side-nav-wrapper">
+            <div class="sidebar-profile">
+                <div class="sidebar-profile-image">
+                    <img src="../assets/images/profile-image.png" class="circle" alt="">
+                </div>
+                <div class="sidebar-profile-info">
+                    <a href="javascript:void(0);" class="account-settings-link">
+                        <p>David Doe</p>
+                        <span>david@gmail.com<i class="material-icons right">arrow_drop_down</i></span>
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar-account-settings">
+                <ul>
+                    <li class="no-padding">
+                        <a class="waves-effect waves-grey"><i class="material-icons">mail_outline</i>Inbox</a>
+                    </li>
+                    <li class="no-padding">
+                        <a class="waves-effect waves-grey"><i class="material-icons">star_border</i>Starred<span
+                                class="new badge">18</span></a>
+                    </li>
+                    <li class="no-padding">
+                        <a class="waves-effect waves-grey"><i class="material-icons">done</i>Sent Mail</a>
+                    </li>
+                    <li class="no-padding">
+                        <a class="waves-effect waves-grey"><i class="material-icons">history</i>History<span
+                                class="new grey lighten-1 badge">3 new</span></a>
+                    </li>
+                    <li class="divider"></li>
+                    <li class="no-padding">
+                        <a class="waves-effect waves-grey"><i class="material-icons">exit_to_app</i>Sign Out</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="sidebar-menu collapsible collapsible-accordion" data-collapsible="accordion">
+                <li class="no-padding active"><a class="waves-effect waves-grey active" href="index.html"><i
+                        class="material-icons">apps</i>Dashboard</a></li>
+                <li class="no-padding">
+                    <a class="collapsible-header waves-effect waves-grey"><i
+                            class="material-icons">lock</i>Authentications<i
+                            class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="authentication/login.html">Login</a></li>
+                            <li><a href="authentication/forget_password_enter_email.html">Forgot Password Enter
+                                Email</a></li>
+                            <li><a href="authentication/forget_password_enter_verification_code.html">Forgot
+                                Password
+                                Enter Verification Code</a></li>
+                            <li><a href="authentication/forget_password_enter_new_password.html">Reset Password</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="no-padding">
+                    <a class="collapsible-header waves-effect waves-grey"><i
+                            class="material-icons">assignment_ind</i>Administration<i
+                            class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="../administrator/user_manage_users.html">Manage User</a></li>
+                            <li><a href="../administrator/role_manage_roles.html">Manage Role</a></li>
+                            <li><a href="../administrator/role_assign_roles.html">Assign Role</a></li>
+                            <li><a href="../administrator/role_page_permission.html">Page Permission</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="no-padding">
+                    <a class="collapsible-header waves-effect waves-grey"><i
+                            class="material-icons">visibility</i>Complaints<i
+                            class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                    <div class="collapsible-body">
+
+                    </div>
+                </li>
+                <li class="no-padding">
+                    <a class="collapsible-header waves-effect waves-grey"><i class="material-icons">reorder</i>List
+                        Mng.<i class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                    <div class="collapsible-body">
+
+                    </div>
+                </li>
+                <li class="no-padding">
+                    <a class="collapsible-header waves-effect waves-grey"><i
+                            class="material-icons">settings_input_antenna</i>Utility
+                        Services<i class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                    <div class="collapsible-body">
+
+                    </div>
+                </li>
+                <li class="no-padding">
+                    <a class="collapsible-header waves-effect waves-grey"><i
+                            class="material-icons">turned_in</i>Reports<i
+                            class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                    <div class="collapsible-body">
+
+                    </div>
+                </li>
+                <li class="no-padding">
+                    <a class="collapsible-header waves-effect waves-grey"><i
+                            class="material-icons">settings</i>Settings<i
+                            class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                    <div class="collapsible-body">
+
+                    </div>
+                </li>
+            </ul>
+            <div class="footer">
+                <p class="copyright">Steelcoders ©</p>
+                <a href="#!">Privacy</a> &amp; <a href="#!">Terms</a>
+            </div>
+        </div>
+    </aside>
+    <main class="mn-inner">
+        <div class="row no-m-t no-m-b">
+            <div class="col s12 m12 l4">
+                <div class="card stats-card">
+                    <div class="card-content">
+                        <div class="card-options">
+                            <ul>
+                                <li class="red-text"><span class="badge cyan lighten-1">gross</span></li>
+                            </ul>
+                        </div>
+                        <span class="card-title">Sales</span>
+                        <span class="stats-counter">$<span class="counter">48190</span><small>This
+                                    week</small></span>
+                    </div>
+                    <div id="sparkline-bar"></div>
+                </div>
+            </div>
+            <div class="col s12 m12 l4">
+                <div class="card stats-card">
+                    <div class="card-content">
+                        <div class="card-options">
+                            <ul>
+                                <li><a href="javascript:void(0)"><i class="material-icons">more_vert</i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <span class="card-title">Page views</span>
+                        <span class="stats-counter"><span class="counter">83710</span><small>This
+                                    month</small></span>
+                    </div>
+                    <div id="sparkline-line"></div>
+                </div>
+            </div>
+            <div class="col s12 m12 l4">
+                <div class="card stats-card">
+                    <div class="card-content">
+                        <span class="card-title">Reports</span>
+                        <span class="stats-counter"><span class="counter">23230</span><small>Last
+                                    week</small></span>
+                        <div class="percent-info green-text">8% <i class="material-icons">trending_up</i></div>
+                    </div>
+                    <div class="progress stats-card-progress">
+                        <div class="determinate" style="width: 70%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row m-t-xs">
+            <div class="col s12 m12 l12">
+                <a href="#create_user_modal" class="waves-effect waves-light btn red right modal-trigger"><i
+                        class="material-icons left">add</i>CREATE PERMISSION</a>
+            </div>
+        </div>
+        <div class="row no-m-t no-m-b">
+            <div class="col s12 m12 l12 alert alert-danger">
+                    <span class="valign-wrapper">
+                        <i class="small material-icons">notification_important</i>
+                        <p> Couldn't create the user, Please try again!</p>
+                    </span>
+            </div>
+            <div class="col s12 m12 l12 alert alert-success">
+                    <span class="valign-wrapper">
+                        <i class="small material-icons">task_alt</i>
+                        <p> User <b>dev.user</b> has created successfully. You can view, edit the in the
+                            below.</p>
+                    </span>
+            </div>
+            <div class="col s12 m12 l12 alert alert-danger">
+                    <span class="valign-wrapper">
+                        <i class="small material-icons">notification_important</i>
+                        <p> Couldn't update the user, Please try again!</p>
+                    </span>
+            </div>
+            <div class="col s12 m12 l12 alert alert-success">
+                    <span class="valign-wrapper">
+                        <i class="small material-icons">task_alt</i>
+                        <p> User dev.user has updated successfully. You can view, edit the in the below.</p>
+                    </span>
+            </div>
+            <div class="col s12 m12 l12 alert alert-danger">
+                    <span class="valign-wrapper">
+                        <i class="small material-icons">notification_important</i>
+                        <p> Couldn't delete the user, Please try again!</p>
+                    </span>
+            </div>
+            <div class="col s12 m12 l12 alert alert-success">
+                    <span class="valign-wrapper">
+                        <i class="small material-icons">task_alt</i>
+                        <p> User dev.user has updated successfully.</p>
+                    </span>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">User List</span>
+                            <table id="manage_users_tbl"
+                                   class="display responsive-table datatable-example data_table">
+                                <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Username</th>
+                                    <th>Mobile</th>
+                                    <th>Opening Date</th>
+                                    <th>More Details</th>
+                                    <th>Actions</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>#203</td>
+                                    <td>PayPal</td>
+                                    <td>01833184012</td>
+                                    <td>10.00 AM 21/12/2020</td>
+                                    <td><a class="waves-effect waves-teal btn-flat modal-trigger"
+                                           href="#user_details_modal"><i
+                                            class="material-icons left">visibility</i>View
+                                        Details</a></td>
+
+
+                                    <td><a class="modal-trigger" href="#edit_user_modal"><i
+                                            class="fa fa-edit font-golden"></i>
+                                        <span class="text-color">edit</span> </a> /
+                                        <a href="#delete_user_modal" class="modal-trigger">
+                                            <i class="fa fa-trash font-red"></i> <span
+                                                class="text-color">delete</span></a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <div class="page-footer">
+        <div class="footer-grid container">
+            <div class="footer-l white">&nbsp;</div>
+            <div class="footer-grid-l white">
+            </div>
+            <div class="footer-r white">&nbsp;</div>
+            <div class="footer-grid-r white">
+                <a class="footer-text" href="#">
+                    <i class="material-icons arrow-r">arrow_forward</i>
+                    <span class="direction">Next</span>
+                    <div>
+                        Mailbox app
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="left-sidebar-hover"></div>
+
+<!-- Create User Modal -->
+<div id="create_user_modal" class="modal">
+    <div class="modal-content">
+        <h4>Create Permission</h4>
+        <div class="divider"></div>
+        <form class="col s12">
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="input-field col s12">
+                        <select>
+                            <option value="" disabled selected>Select user</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                    </div>
+                    <p class="">
+                        <input type="checkbox" class="filled-in" id="page_1"/>
+                        <label for="page_1">Page 1</label>
+                    </p>
+                    <p class="">
+                        <input type="checkbox" class="filled-in" id="page_2"/>
+                        <label for="page_2">Page 2</label>
+
+                    </p>
+                    <p class="">
+                        <input type="checkbox" class="filled-in" id="page_3"/>
+                        <label for="page_3">Page 3</label>
+
+                    </p>
+                </div>
+                <div class="col s12 m6">
+                    <p class="red-text"><b>Guideline 1:</b></p>
+                    <p>Checked pages will be available for the role. Please be very cautious regarding this matter as this can be very sensitive.</p>
+                    <p>1. Uncheck page if you want to inaccessible for th role</p>
+                    <p>2. Check page if you want to accessible for th role</p>
+                    <p><b>Guideline#2</b></p>
+                    <p>Re-login with username & password of the assigned role to view changes of access.</p>
+                    <p><b>Guideline#3</b></p>
+                    <p>Keep the fields unchecked to assign no pages to role. However we highly recommend to assign page.</p>
+                    <p><b>Guideline#4</b></p>
+                    <p>Dashboard will be auto assigned to role and it will be considered as home page of the role.</p>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col s12 m12 l12 center">
+                    <button type="submit" class="waves-effect waves-light btn red center"><i
+                            class="material-icons left">add</i>CREATE NEW USER
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- User Details Modal -->
+<div id="user_details_modal" class="modal">
+    <div class="modal-content">
+        <h4>User Details</h4>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="name_ud" type="text" class="validate">
+                <label for="name_ud">Name</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="mobile_ud" type="text" class="validate">
+                <label for="mobile_ud">Mobile</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="email_ud" type="text" class="validate">
+                <label for="email_ud">Email</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="address_ud" type="text" class="validate">
+                <label for="address_ud">Address</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="username_ud" type="text" class="validate">
+                <label for="username_ud">Username</label>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col s12 m12 l12 center">
+                <button type="submit" class="waves-effect waves-light btn red center modal-action modal-close"><i
+                        class="material-icons left">clear</i>Close
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Password Policy Modal -->
+<div id="password_policy_modal" class="modal">
+    <div class="modal-content">
+        <h4>Password Policy</h4>
+        <ol>
+            <li>Password <b>MUST</b> be changed in every 3 month.</li>
+            <li>Password <b>MUST</b> contain at least one number.</li>
+            <li>Password <b>MUST</b> contain at least one uppercase and one lower case letter.</li>
+            <li>Password <b>MUST</b> contain one special character [@,$,%,&,^].</li>
+            <li>Password <b>MUST</b> be long at least 8 characters.</li>
+        </ol>
+    </div>
+    <div class="modal-footer">
+        <a href="#password_policy_modal" class="modal-action modal-close waves-effect btn red">Close</a>
+    </div>
+</div>
+
+<!-- Edit User -->
+<div id="edit_user_modal" class="modal">
+    <div class="modal-content">
+        <h4 class="teal-text">Edit Permission</h4>
+<div class="divider"></div>
+        <form class="col s12">
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="input-field col s12">
+                        <select>
+                            <option value="" disabled selected>Select user</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                    </div>
+                    <p class="">
+                        <input type="checkbox" class="filled-in" id="page_1"/>
+                        <label for="page_1">Page 1</label>
+                    </p>
+                    <p class="">
+                        <input type="checkbox" class="filled-in" id="page_2"/>
+                        <label for="page_2">Page 2</label>
+
+                    </p>
+                    <p class="">
+                        <input type="checkbox" class="filled-in" id="page_3"/>
+                        <label for="page_3">Page 3</label>
+
+                    </p>
+                </div>
+                <div class="col s12 m6">
+                    <p class="red-text"><b>Guideline 1:</b></p>
+                    <p>Checked pages will be available for the role. Please be very cautious regarding this matter as this can be very sensitive.</p>
+                    <p>1. Uncheck page if you want to inaccessible for th role</p>
+                    <p>2. Check page if you want to accessible for th role</p>
+                    <p><b>Guideline#2</b></p>
+                    <p>Re-login with username & password of the assigned role to view changes of access.</p>
+                    <p><b>Guideline#3</b></p>
+                    <p>Keep the fields unchecked to assign no pages to role. However we highly recommend to assign page.</p>
+                    <p><b>Guideline#4</b></p>
+                    <p>Dashboard will be auto assigned to role and it will be considered as home page of the role.</p>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col s12 m12 l12 center">
+                    <button type="submit" class="waves-effect waves-light btn red center"><i
+                            class="material-icons left">add</i>CREATE NEW USER
+                    </button>
+                </div>
+            </div>
+        </form>
+</div>
+
+<!-- Delete User Modal -->
+<div id="delete_user_modal" class="modal">
+    <div class="modal-content">
+        <h5 class="modal-title">Confirm Action</h5>
+        <div class="divider"></div>
+        <p>Are you sure to want delete the user <b>dev.user</b></p>
+        <p>Deleting an user is permanent and can not be undone. Please confirm if you really want to delete the
+            user.</p>
+        <div class="divider"></div>
+        <div class="section center-align">
+            <a href="#password_policy_modal" class="modal-action modal-close waves-effect btn red">Confirm</a>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+</script>
+
+<!-- Javascripts -->
+
+<script src="../assets/plugins/jquery/jquery-2.2.0.min.js"></script>
+<script src="../assets/plugins/materialize/js/materialize.min.js"></script>
+<script src="../assets/plugins/material-preloader/js/materialPreloader.min.js"></script>
+<script src="../assets/plugins/jquery-blockui/jquery.blockui.js"></script>
+<script src="../assets/plugins/waypoints/jquery.waypoints.min.js"></script>
+<script src="../assets/plugins/counter-up-master/jquery.counterup.min.js"></script>
+<script src="../assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+<script src="../assets/plugins/peity/jquery.peity.min.js"></script>
+<script src="../assets/js/alpha.min.js"></script>
+<script src="../assets/plugins/datatables/js/jquery.dataTables.min.js"></script>
+<script src="../assets/js/pages/table-data.js"></script>
+<script src="../assets/js/custom.js"></script>
 
 </body>
 </html>
