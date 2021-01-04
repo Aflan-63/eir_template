@@ -357,57 +357,13 @@
         </div>
     </aside>
     <main class="mn-inner">
-        <div class="row no-m-t no-m-b">
-            <div class="col s12 m12 l4">
-                <div class="card stats-card">
-                    <div class="card-content">
-                        <div class="card-options">
-                            <ul>
-                                <li class="red-text"><span class="badge cyan lighten-1">gross</span></li>
-                            </ul>
-                        </div>
-                        <span class="card-title">Sales</span>
-                        <span class="stats-counter">$<span class="counter">48190</span><small>This
-                                    week</small></span>
-                    </div>
-                    <div id="sparkline-bar"></div>
-                </div>
-            </div>
-            <div class="col s12 m12 l4">
-                <div class="card stats-card">
-                    <div class="card-content">
-                        <div class="card-options">
-                            <ul>
-                                <li><a href="javascript:void(0)"><i class="material-icons">more_vert</i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <span class="card-title">Page views</span>
-                        <span class="stats-counter"><span class="counter">83710</span><small>This
-                                    month</small></span>
-                    </div>
-                    <div id="sparkline-line"></div>
-                </div>
-            </div>
-            <div class="col s12 m12 l4">
-                <div class="card stats-card">
-                    <div class="card-content">
-                        <span class="card-title">Reports</span>
-                        <span class="stats-counter"><span class="counter">23230</span><small>Last
-                                    week</small></span>
-                        <div class="percent-info green-text">8% <i class="material-icons">trending_up</i></div>
-                    </div>
-                    <div class="progress stats-card-progress">
-                        <div class="determinate" style="width: 70%"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="row m-t-xs">
-            <div class="col s12 m12 l12">
-                <a href="#create_user_modal" class="waves-effect waves-light btn red right modal-trigger"><i
-                        class="material-icons left">add</i>CREATE PERMISSION</a>
-            </div>
+            <div class="col s12 m6 l6">
+                <h5>Total Whitelisted: 12345</h5>
+            </div><div class="col s12 m6 l6">
+            <a href="#create_user_modal" class="waves-effect waves-light btn red right modal-trigger"><i
+                    class="material-icons left">add</i>CREATE WHITELIST</a>
+        </div>
         </div>
         <div class="row no-m-t no-m-b">
             <div class="col s12 m12 l12 alert alert-danger">
@@ -457,25 +413,20 @@
                                 <thead>
                                 <tr>
                                     <th>ID</th>
-                                    <th>Username</th>
-                                    <th>Mobile</th>
-                                    <th>Opening Date</th>
-                                    <th>More Details</th>
+                                    <th>IMEI Number</th>
+                                    <th>IMSI Number</th>
+                                    <th>Status</th>
+                                    <th>Date</th>
                                     <th>Actions</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
                                     <td>#203</td>
-                                    <td>PayPal</td>
                                     <td>01833184012</td>
+                                    <td>01833184012</td>
+                                    <td><button class="btn btn-sm grey">White Listed</button></td>
                                     <td>10.00 AM 21/12/2020</td>
-                                    <td><a class="waves-effect waves-teal btn-flat modal-trigger"
-                                           href="#user_details_modal"><i
-                                            class="material-icons left">visibility</i>View
-                                        Details</a></td>
-
-
                                     <td><a class="modal-trigger" href="#edit_user_modal"><i
                                             class="fa fa-edit font-golden"></i>
                                         <span class="text-color">edit</span> </a> /
@@ -516,165 +467,69 @@
 <!-- Create User Modal -->
 <div id="create_user_modal" class="modal">
     <div class="modal-content">
-        <h4>Create Permission</h4>
+        <h4>New Whitelist</h4>
         <div class="divider"></div>
-        <form class="col s12">
+        <form class="col s12 l6">
             <div class="row">
                 <div class="col s12 m6">
                     <div class="input-field col s12">
-                        <select>
-                            <option value="" disabled selected>Select user</option>
-                            <option value="1">Option 1</option>
-                            <option value="2">Option 2</option>
-                            <option value="3">Option 3</option>
-                        </select>
+                        <input id="imei_number" type="text" class="validate">
+                        <label for="imei_number">IMEI Number</label>
                     </div>
-                    <p class="">
-                        <input type="checkbox" class="filled-in" id="page_1"/>
-                        <label for="page_1">Page 1</label>
-                    </p>
-                    <p class="">
-                        <input type="checkbox" class="filled-in" id="page_2"/>
-                        <label for="page_2">Page 2</label>
-
-                    </p>
-                    <p class="">
-                        <input type="checkbox" class="filled-in" id="page_3"/>
-                        <label for="page_3">Page 3</label>
-
-                    </p>
+                    <div class="input-field col s12">
+                        <input id="imsi_number" type="text" class="validate">
+                        <label for="imsi_number">(Optional) IMSI Number</label>
+                    </div>
                 </div>
                 <div class="col s12 m6">
-                    <p class="red-text"><b>Guideline 1:</b></p>
-                    <p class="f-s-12">Checked pages will be available for the role. Please be very cautious regarding this matter as this can be very sensitive.</p>
-                    <p class="f-s-12">1. Uncheck page if you want to inaccessible for th role<br>2. Check page if you want to accessible for th role</p>
-                    <p><b>Guideline#2</b></p>
-                    <p class="f-s-12">Re-login with username & password of the assigned role to view changes of access.</p>
-                    <p><b>Guideline#3</b></p>
-                    <p class="f-s-12">Keep the fields unchecked to assign no pages to role. However we highly recommend to assign page.</p>
-                    <p><b>Guideline#4</b></p>
-                    <p class="f-s-12">Dashboard will be auto assigned to role and it will be considered as home page of the role.</p>
+                    <p class="red-text"><b>info:</b></p>
+                    <p>Whitelisted devices are those devices which are bought legally. If the IMEI/IMSI does matches with the database, then the device is Whitelisted.</p>
                 </div>
             </div>
             <div class="divider"></div>
             <div class="row">
                 <div class="col s12 m12 l12 center">
                     <button type="submit" class="waves-effect waves-light btn red center"><i
-                            class="material-icons left">add</i>CREATE NEW PERMISSION
+                            class="material-icons left">add</i>CREATE WHITELIST
                     </button>
                 </div>
             </div>
         </form>
-    </div>
-</div>
-
-<!-- User Details Modal -->
-<div id="user_details_modal" class="modal">
-    <div class="modal-content">
-        <h4>User Details</h4>
-        <div class="divider"></div>
-        <div class="row">
-            <div class="input-field col s6">
-                <input id="name_ud" type="text" class="validate">
-                <label for="name_ud">Name</label>
-            </div>
-            <div class="input-field col s6">
-                <input id="mobile_ud" type="text" class="validate">
-                <label for="mobile_ud">Mobile</label>
-            </div>
-            <div class="input-field col s6">
-                <input id="email_ud" type="text" class="validate">
-                <label for="email_ud">Email</label>
-            </div>
-            <div class="input-field col s6">
-                <input id="address_ud" type="text" class="validate">
-                <label for="address_ud">Address</label>
-            </div>
-            <div class="input-field col s6">
-                <input id="username_ud" type="text" class="validate">
-                <label for="username_ud">Username</label>
-            </div>
-        </div>
-        <div class="divider"></div>
-        <div class="row">
-            <div class="col s12 m12 l12 center">
-                <button type="submit" class="waves-effect waves-light btn red center modal-action modal-close"><i
-                        class="material-icons left">clear</i>Close
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Password Policy Modal -->
-<div id="password_policy_modal" class="modal">
-    <div class="modal-content">
-        <h4>Password Policy</h4>
-        <ol>
-            <li>Password <b>MUST</b> be changed in every 3 month.</li>
-            <li>Password <b>MUST</b> contain at least one number.</li>
-            <li>Password <b>MUST</b> contain at least one uppercase and one lower case letter.</li>
-            <li>Password <b>MUST</b> contain one special character [@,$,%,&,^].</li>
-            <li>Password <b>MUST</b> be long at least 8 characters.</li>
-        </ol>
-    </div>
-    <div class="modal-footer">
-        <a href="#password_policy_modal" class="modal-action modal-close waves-effect btn red">Close</a>
     </div>
 </div>
 
 <!-- Edit User -->
 <div id="edit_user_modal" class="modal">
     <div class="modal-content">
-        <h4 class="teal-text">Edit Permission</h4>
-<div class="divider"></div>
-        <form class="col s12">
+        <h4>Edit</h4>
+        <div class="divider"></div>
+        <form class="col s12 l6">
             <div class="row">
                 <div class="col s12 m6">
                     <div class="input-field col s12">
-                        <select>
-                            <option value="" disabled selected>Select user</option>
-                            <option value="1">Option 1</option>
-                            <option value="2">Option 2</option>
-                            <option value="3">Option 3</option>
-                        </select>
+                        <input id="imei_number_edit" type="text" class="validate" value="01833184012">
+                        <label for="imei_number_edit">IMEI Number</label>
                     </div>
-                    <p class="">
-                        <input type="checkbox" class="filled-in" id="page_1_edit"/>
-                        <label for="page_1">Page 1</label>
-                    </p>
-                    <p class="">
-                        <input type="checkbox" class="filled-in" id="page_2_edit"/>
-                        <label for="page_2">Page 2</label>
-
-                    </p>
-                    <p class="">
-                        <input type="checkbox" class="filled-in" id="page_3_edit"/>
-                        <label for="page_3">Page 3</label>
-
-                    </p>
+                    <div class="input-field col s12">
+                        <input id="imsi_number_edit" type="text" class="validate">
+                        <label for="imsi_number_edit">(Optional) IMSI Number</label>
+                    </div>
                 </div>
                 <div class="col s12 m6">
-                    <p class="red-text"><b>Guideline 1:</b></p>
-                    <p class="f-s-12">Checked pages will be available for the role. Please be very cautious regarding this matter as this can be very sensitive.</p>
-                    <p class="f-s-12">1. Uncheck page if you want to inaccessible for th role<br>2. Check page if you want to accessible for th role</p>
-                    <p><b>Guideline#2</b></p>
-                    <p class="f-s-12">Re-login with username & password of the assigned role to view changes of access.</p>
-                    <p><b>Guideline#3</b></p>
-                    <p class="f-s-12">Keep the fields unchecked to assign no pages to role. However we highly recommend to assign page.</p>
-                    <p><b>Guideline#4</b></p>
-                    <p class="f-s-12">Dashboard will be auto assigned to role and it will be considered as home page of the role.</p>
+                    <p class="red-text"><b>info:</b></p>
+                    <p>Whitelisted devices are those devices which are bought legally. If the IMEI/IMSI does matches with the database, then the device is Whitelisted.</p>
                 </div>
             </div>
             <div class="divider"></div>
             <div class="row">
                 <div class="col s12 m12 l12 center">
                     <button type="submit" class="waves-effect waves-light btn red center"><i
-                            class="material-icons left">add</i>UPDATE PERMISSION
+                            class="material-icons left">add</i>UPDATE WHITELIST
                     </button>
                 </div>
             </div>
         </form>
+    </div>
 </div>
 
 <!-- Delete User Modal -->
@@ -682,9 +537,9 @@
     <div class="modal-content">
         <h5 class="modal-title">Confirm Action</h5>
         <div class="divider"></div>
-        <p>Are you sure to want delete the user <b>dev.user</b></p>
-        <p>Deleting an user is permanent and can not be undone. Please confirm if you really want to delete the
-            user.</p>
+        <p>Are you sure to want delete the IMEI <b>01833184012</b>?</p>
+        <p>Note: Deleting an IMEI is permanent and can not be undone. Please confirm if you really want to delete the
+            IMEI.</p>
         <div class="divider"></div>
         <div class="section center-align">
             <a href="#password_policy_modal" class="modal-action modal-close waves-effect btn red">Confirm</a>

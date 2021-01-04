@@ -3,18 +3,17 @@
 
 <head>
     <!-- Title -->
-    <title>Dashboard | EIR</title>
+    <title>Manage User | EIR</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta charset="UTF-8">
-    <meta name="description" content="Responsive Admin Dashboard Template" />
-    <meta name="keywords" content="admin,dashboard" />
-    <meta name="author" content="Steelcoders" />
-
+    <meta name="description" content="Responsive Admin Dashboard Template"/>
+    <meta name="keywords" content="admin,dashboard"/>
+    <meta name="author" content="Steelcoders"/>
 
 
     <!-- Styles -->
-    <link type="text/css" rel="stylesheet" href="../assets/plugins/materialize/css/materialize.css" />
+    <link type="text/css" rel="stylesheet" href="../assets/plugins/materialize/css/materialize.css"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="../assets/plugins/metrojs/MetroJs.min.css" rel="stylesheet">
     <link href="../assets/plugins/weather-icons-master/css/weather-icons.min.css" rel="stylesheet">
@@ -24,10 +23,8 @@
     <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.min.css">
 
     <!-- Theme Styles -->
-    <link href="../assets/css/alpha.css" rel="stylesheet" type="text/css" />
-    <link href="../assets/css/custom.css" rel="stylesheet" type="text/css" />
-
-
+    <link href="../assets/css/alpha.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/css/custom.css" rel="stylesheet" type="text/css"/>
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -40,530 +37,637 @@
 </head>
 
 <body>
-    <div class="loader-bg"></div>
-    <div class="loader">
-        <div class="preloader-wrapper big active">
-            <div class="spinner-layer spinner-blue">
-                <div class="circle-clipper left">
-                    <div class="circle"></div>
-                </div>
-                <div class="gap-patch">
-                    <div class="circle"></div>
-                </div>
-                <div class="circle-clipper right">
-                    <div class="circle"></div>
-                </div>
+<div class="loader-bg"></div>
+<div class="loader">
+    <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
             </div>
-            <div class="spinner-layer spinner-teal lighten-1">
-                <div class="circle-clipper left">
-                    <div class="circle"></div>
-                </div>
-                <div class="gap-patch">
-                    <div class="circle"></div>
-                </div>
-                <div class="circle-clipper right">
-                    <div class="circle"></div>
-                </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
             </div>
-            <div class="spinner-layer spinner-yellow">
-                <div class="circle-clipper left">
-                    <div class="circle"></div>
-                </div>
-                <div class="gap-patch">
-                    <div class="circle"></div>
-                </div>
-                <div class="circle-clipper right">
-                    <div class="circle"></div>
-                </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
             </div>
-            <div class="spinner-layer spinner-green">
-                <div class="circle-clipper left">
-                    <div class="circle"></div>
-                </div>
-                <div class="gap-patch">
-                    <div class="circle"></div>
-                </div>
-                <div class="circle-clipper right">
-                    <div class="circle"></div>
-                </div>
+        </div>
+        <div class="spinner-layer spinner-teal lighten-1">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+        <div class="spinner-layer spinner-yellow">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+        <div class="spinner-layer spinner-green">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
             </div>
         </div>
     </div>
-    <div class="mn-content fixed-sidebar">
-        <header class="mn-header navbar-fixed">
-            <nav class="red darken-1">
-                <div class="nav-wrapper row">
-                    <section class="material-design-hamburger navigation-toggle">
-                        <a href="javascript:void(0)" data-activates="slide-out"
-                            class="button-collapse show-on-large material-design-hamburger__icon">
-                            <span class="material-design-hamburger__layer"></span>
-                        </a>
-                    </section>
-                    <div class="header-title col s3 m3">
-                        <span class="chapter-title">Equipment Interchange Receipt (EIR)</span>
-                    </div>
-                    <form class="left search col s6 hide-on-small-and-down">
-                        <div class="input-field">
-                            <input id="search" type="search" placeholder="Search" autocomplete="off">
-                            <label for="search"><i class="material-icons search-icon">search</i></label>
-                        </div>
-                        <a href="javascript: void(0)" class="close-search"><i class="material-icons">close</i></a>
-                    </form>
-                    <!-- <form class="left search col s6 hide-on-small-and-down">
+</div>
+<div class="mn-content fixed-sidebar">
+    <header class="mn-header navbar-fixed">
+        <nav class="red darken-1">
+            <div class="nav-wrapper row">
+                <section class="material-design-hamburger navigation-toggle">
+                    <a href="javascript:void(0)" data-activates="slide-out"
+                       class="button-collapse show-on-large material-design-hamburger__icon">
+                        <span class="material-design-hamburger__layer"></span>
+                    </a>
+                </section>
+                <div class="header-title col s3 m3">
+                    <span class="chapter-title">Equipment Interchange Receipt (EIR)</span>
+                </div>
+                <form class="left search col s6 hide-on-small-and-down">
                     <div class="input-field">
                         <input id="search" type="search" placeholder="Search" autocomplete="off">
                         <label for="search"><i class="material-icons search-icon">search</i></label>
                     </div>
                     <a href="javascript: void(0)" class="close-search"><i class="material-icons">close</i></a>
-                </form> -->
-                    <ul class="right col s9 m3 nav-right-menu">
-                        <!-- <li><a href="javascript:void(0)" data-activates="chat-sidebar"
-                            class="chat-button show-on-large"><i class="material-icons">more_vert</i></a></li> -->
-                        <!--<li class="hide-on-small-and-down"><a href="javascript:void(0)" data-activates="dropdown1"
-                            class="dropdown-button dropdown-right show-on-large"><i
-                                class="material-icons">notifications_none</i><span class="badge">4</span></a></li>-->
-                        <li class="hide-on-med-and-up"><a href="javascript:void(0)" class="search-toggle"><i
-                                    class="material-icons">search</i></a></li>
-                    </ul>
+                </form>
+                <ul class="right col s9 m3 nav-right-menu">
+                    <li class="hide-on-med-and-up"><a href="javascript:void(0)" class="search-toggle"><i
+                            class="material-icons">search</i></a></li>
+                </ul>
 
-                    <ul id="dropdown1" class="dropdown-content notifications-dropdown">
-                    </ul>
+                <ul id="dropdown1" class="dropdown-content notifications-dropdown">
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <aside id="slide-out" class="side-nav white fixed">
+        <div class="side-nav-wrapper">
+            <div class="sidebar-profile">
+                <div class="sidebar-profile-image">
+                    <img src="../assets/images/profile-image.png" class="circle" alt="">
                 </div>
-            </nav>
-        </header>
-        <aside id="slide-out" class="side-nav white fixed">
-            <div class="side-nav-wrapper">
-                <div class="sidebar-profile">
-                    <div class="sidebar-profile-image">
-                        <img src="../assets/images/profile-image.png" class="circle" alt="">
-                    </div>
-                    <div class="sidebar-profile-info">
-                        <a href="javascript:void(0);" class="account-settings-link">
-                            <p>David Doe</p>
-                            <span>david@gmail.com<i class="material-icons right">arrow_drop_down</i></span>
-                        </a>
-                    </div>
+                <div class="sidebar-profile-info">
+                    <a href="javascript:void(0);" class="account-settings-link">
+                        <p>David Doe</p>
+                        <span>david@gmail.com<i class="material-icons right">arrow_drop_down</i></span>
+                    </a>
                 </div>
-                <div class="sidebar-account-settings">
-                    <ul>
-                        <li class="no-padding">
-                            <a class="waves-effect waves-grey"><i class="material-icons">mail_outline</i>Inbox</a>
-                        </li>
-                        <li class="no-padding">
-                            <a class="waves-effect waves-grey"><i class="material-icons">star_border</i>Starred<span
-                                    class="new badge">18</span></a>
-                        </li>
-                        <li class="no-padding">
-                            <a class="waves-effect waves-grey"><i class="material-icons">done</i>Sent Mail</a>
-                        </li>
-                        <li class="no-padding">
-                            <a class="waves-effect waves-grey"><i class="material-icons">history</i>History<span
-                                    class="new grey lighten-1 badge">3 new</span></a>
-                        </li>
-                        <li class="divider"></li>
-                        <li class="no-padding">
-                            <a class="waves-effect waves-grey"><i class="material-icons">exit_to_app</i>Sign Out</a>
-                        </li>
-                    </ul>
-                </div>
-                <ul class="sidebar-menu collapsible collapsible-accordion" data-collapsible="accordion">
-                    <li class="no-padding active"><a class="waves-effect waves-grey active" href="index.html"><i
-                                class="material-icons">apps</i>Dashboard</a></li>
+            </div>
+            <div class="sidebar-account-settings">
+                <ul>
                     <li class="no-padding">
-                        <a class="collapsible-header waves-effect waves-grey"><i
-                                class="material-icons">lock</i>Authentications<i
+                        <a class="waves-effect waves-grey" href="inbox/inbox.html"><i class="material-icons">mail_outline</i>Inbox</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li class="no-padding">
+                        <a class="waves-effect waves-grey"><i class="material-icons">exit_to_app</i>Sign Out</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="sidebar-menu collapsible collapsible-accordion" data-collapsible="accordion">
+                <li class="no-padding active"><a class="waves-effect waves-grey active" href="dashboard.html"><i
+                        class="material-icons">apps</i>Dashboard</a></li>
+                <li class="no-padding">
+                    <a class="collapsible-header waves-effect waves-grey"><i class="material-icons">lock</i>Authentications<i
+                            class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="authentication/login.html">Login</a></li>
+                            <li><a href="authentication/forget_password_enter_email.html">Forgot Password Enter
+                                Email</a></li>
+                            <li><a href="authentication/forget_password_enter_verification_code.html">Forgot Password
+                                Enter Verification Code</a></li>
+                            <li><a href="authentication/forget_password_enter_new_password.html">Reset Password</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="no-padding">
+                    <a class="collapsible-header waves-effect waves-grey"><i class="material-icons">assignment_ind</i>Administration<i
+                            class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="administrator/user_manage_users.html">Manage User</a></li>
+                            <li><a href="#">Manage Role</a></li>
+                            <li><a href="administrator/role_assign_roles.html">Assign Role</a></li>
+                            <li><a href="administrator/role_page_permission.html">Page Permission</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="no-padding">
+                    <a class="collapsible-header waves-effect waves-grey"><i class="material-icons">visibility</i>Complaints<i
+                            class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                    <div class="collapsible-body">
+
+                    </div>
+                </li>
+                <li class="no-padding">
+                    <a class="collapsible-header waves-effect waves-grey"><i class="material-icons">reorder</i>List Mng.<i
+                            class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="list_management/whitelist_management.html">Whitelist Management</a></li>
+                            <li><a href="list_management/blacklist_management.html">Blacklist Management</a></li>
+                            <li><a href="list_management/greylist_management.html">Greylist Management</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="no-padding">
+                    <a class="collapsible-header waves-effect waves-grey"><i class="material-icons">settings_input_antenna</i>Utility
+                        Services<i
                                 class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
-                        <div class="collapsible-body">
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="utility_service/verify_imei.html"">IMEI Checker</a></li>
+                            <li><a href="utility_service/verify_tuple.html">Tuple Checker</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="no-padding">
+                    <a class="collapsible-header waves-effect waves-grey" href="report/reports.html"><i class="material-icons">turned_in</i>Reports<i
+                            class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                    <div class="collapsible-body">
+
+                    </div>
+                </li>
+                <li class="no-padding">
+                    <a class="collapsible-header waves-effect waves-grey"><i class="material-icons">settings</i>Settings<i
+                            class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="setting/general_settings.html">General Settings</a></li>
+                            <li><a href="setting/notifications_settings.html">Notification Settings</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <!--<li class="no-padding">
+                    <a class="collapsible-header waves-effect waves-grey"><i class="material-icons">apps</i>Apps<i
+                            class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="mailbox.html">Mailbox</a></li>
+                            <li><a href="search.html">Search</a></li>
+                            <li><a href="todo.html">Todo</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="no-padding">
+                    <a class="collapsible-header waves-effect waves-grey"><i
+                            class="material-icons">code</i>Components<i
+                            class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="ui-accordions.html">Accordion</a></li>
+                            <li><a href="ui-badges.html">Badges</a></li>
+                            <li><a href="ui-buttons.html">Buttons</a></li>
+                            <li><a href="ui-typography.html">Typography</a></li>
+                            <li><a href="ui-cards.html">Cards</a></li>
+                            <li><a href="ui-carousel.html">Carousel</a></li>
+                            <li><a href="ui-chips.html">Chips</a></li>
+                            <li><a href="ui-color.html">Color</a></li>
+                            <li><a href="ui-collections.html">Collections</a></li>
+                            <li><a href="ui-dropdown.html">Dropdown</a></li>
+                            <li><a href="ui-dialogs.html">Dialogs</a></li>
+                            <li><a href="ui-grid.html">Grid</a></li>
+                            <li><a href="ui-helpers.html">Helpers</a></li>
+                            <li><a href="ui-modals.html">Modals</a></li>
+                            <li><a href="ui-media.html">Media</a></li>
+                            <li><a href="ui-icons.html">Icons</a></li>
+                            <li><a href="ui-parallax.html">Parallax</a></li>
+                            <li><a href="ui-preloader.html">Preloader</a></li>
+                            <li><a href="ui-shadow.html">Shadow</a></li>
+                            <li><a href="ui-tabs.html">Tabs</a></li>
+                            <li><a href="ui-waves.html">Waves</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="no-padding">
+                    <a class="collapsible-header waves-effect waves-grey"><i
+                            class="material-icons">star_border</i>Plugins<i
+                            class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="miscellaneous-sweetalert.html">Sweet Alert</a>
+                            <li><a href="miscellaneous-code-editor.html">Code Editor</a>
+                            <li><a href="miscellaneous-nestable.html">Nestable List</a>
+                            <li><a href="miscellaneous-masonry.html">Masonry</a>
+                            <li><a href="miscellaneous-idle-timer.html">Idle Timer</a>
+                        </ul>
+                    </div>
+                </li>
+                <li class="no-padding">
+                    <a class="collapsible-header waves-effect waves-grey"><i
+                            class="material-icons">desktop_windows</i>Layouts<i
+                            class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="layout-blank.html">Blank Page</a></li>
+                            <li><a href="layout-boxed.html">Boxed Layout</a></li>
+                            <li><a href="layout-hidden-sidebar.html">Hidden Sidebar</a></li>
+                            <li><a href="layout-right-sidebar.html">Right Sidebar</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="no-padding">
+                    <a class="collapsible-header waves-effect waves-grey"><i
+                            class="material-icons">mode_edit</i>Forms<i
+                            class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="form-elements.html">Form Elements</a></li>
+                            <li><a href="form-wizard.html">Form Wizard</a></li>
+                            <li><a href="form-upload.html">File Upload</a></li>
+                            <li><a href="form-image-crop.html">Image Crop</a></li>
+                            <li><a href="form-image-zoom.html">Image Zoom</a></li>
+                            <li><a href="form-input-mask.html">Input Mask</a></li>
+                            <li><a href="form-select2.html">Select2</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="no-padding">
+                    <a class="collapsible-header waves-effect waves-grey"><i
+                            class="material-icons">grid_on</i>Tables<i
+                            class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="table-static.html">Static Tables</a></li>
+                            <li><a href="table-responsive.html">Responsive Tables</a></li>
+                            <li><a href="table-comparison.html">Comparison Table</a></li>
+                            <li><a href="table-data.html">Data Tables</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="no-padding"><a class="waves-effect waves-grey" href="charts.html"><i
+                            class="material-icons">trending_up</i>Charts</a></li>
+                <li class="no-padding">
+                    <a class="collapsible-header waves-effect waves-grey"><i
+                            class="material-icons">my_location</i>Maps<i
+                            class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="maps-google.html">Google Maps</a></li>
+                            <li><a href="maps-vector.html">Vector Maps</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="no-padding">
+                    <a class="collapsible-header waves-effect waves-grey"><i
+                            class="material-icons">tag_faces</i>Extra Pages<i
+                            class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="404.html">404 Page</a></li>
+                            <li><a href="500.html">500 Page</a></li>
+                            <li><a href="invoice.html">Invoice</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="authentication/login.html">Sign In</a></li>
+                            <li><a href="sign-up.html">Sign Up</a></li>
+                            <li><a href="lock-screen.html">Lock Screen</a></li>
+                            <li><a href="pattern-lock-screen.html">Pattern Lock Screen</a></li>
+                            <li><a href="forgot.html">Forgot Password</a></li>
+                            <li><a href="pricing-tables.html">Pricing Tables</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="timeline.html">Timeline</a></li>
+                            <li><a href="calendar.html">Calendar</a></li>
+                            <li><a href="coming-soon.html">Coming Soon</a></li>
+                        </ul>
+                    </div>
+                </li>-->
+            </ul>
+            <div class="footer">
+                <p class="copyright">Steelcoders ©</p>
+                <a href="#!">Privacy</a> &amp; <a href="#!">Terms</a>
+            </div>
+        </div>
+    </aside>
+    <main class="mn-inner">
+        <div class="row no-m-t no-m-b">
+            <div class="col s12 m12 l4">
+                <div class="card stats-card">
+                    <div class="card-content">
+                        <div class="card-options">
                             <ul>
-                                <li><a href="authentication/login.html">Login</a></li>
-                                <li><a href="authentication/forget_password_enter_email.html">Forgot Password Enter
-                                        Email</a></li>
-                                <li><a href="authentication/forget_password_enter_verification_code.html">Forgot
-                                        Password
-                                        Enter Verification Code</a></li>
-                                <li><a href="authentication/forget_password_enter_new_password.html">Reset Password</a>
+                                <li class="red-text"><span class="badge cyan lighten-1">gross</span></li>
+                            </ul>
+                        </div>
+                        <span class="card-title">Sales</span>
+                        <span class="stats-counter">$<span class="counter">48190</span><small>This
+                                    week</small></span>
+                    </div>
+                    <div id="sparkline-bar"></div>
+                </div>
+            </div>
+            <div class="col s12 m12 l4">
+                <div class="card stats-card">
+                    <div class="card-content">
+                        <div class="card-options">
+                            <ul>
+                                <li><a href="javascript:void(0)"><i class="material-icons">more_vert</i></a>
                                 </li>
                             </ul>
                         </div>
-                    </li>
-                    <li class="no-padding">
-                        <a class="collapsible-header waves-effect waves-grey"><i
-                                class="material-icons">assignment_ind</i>Administration<i
-                                class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
-                        <div class="collapsible-body">
-                            <ul>
-                                <li><a href="#">Manage User</a></li>
-                                <li><a href="#">Manage Role</a></li>
-                                <li><a href="#">Assign Role</a></li>
-                                <li><a href="#">Page Permission</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="no-padding">
-                        <a class="collapsible-header waves-effect waves-grey"><i
-                                class="material-icons">visibility</i>Complaints<i
-                                class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
-                        <div class="collapsible-body">
-
-                        </div>
-                    </li>
-                    <li class="no-padding">
-                        <a class="collapsible-header waves-effect waves-grey"><i class="material-icons">reorder</i>List
-                            Mng.<i class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
-                        <div class="collapsible-body">
-
-                        </div>
-                    </li>
-                    <li class="no-padding">
-                        <a class="collapsible-header waves-effect waves-grey"><i
-                                class="material-icons">settings_input_antenna</i>Utility
-                            Services<i class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
-                        <div class="collapsible-body">
-
-                        </div>
-                    </li>
-                    <li class="no-padding">
-                        <a class="collapsible-header waves-effect waves-grey"><i
-                                class="material-icons">turned_in</i>Reports<i
-                                class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
-                        <div class="collapsible-body">
-
-                        </div>
-                    </li>
-                    <li class="no-padding">
-                        <a class="collapsible-header waves-effect waves-grey"><i
-                                class="material-icons">settings</i>Settings<i
-                                class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
-                        <div class="collapsible-body">
-
-                        </div>
-                    </li>
-                </ul>
-                <div class="footer">
-                    <p class="copyright">Steelcoders ©</p>
-                    <a href="#!">Privacy</a> &amp; <a href="#!">Terms</a>
-                </div>
-            </div>
-        </aside>
-        <main class="mn-inner">
-            <div class="row no-m-t no-m-b">
-                <div class="col s12 m12 l4">
-                    <div class="card stats-card">
-                        <div class="card-content">
-                            <div class="card-options">
-                                <ul>
-                                    <li class="red-text"><span class="badge cyan lighten-1">gross</span></li>
-                                </ul>
-                            </div>
-                            <span class="card-title">Sales</span>
-                            <span class="stats-counter">$<span class="counter">48190</span><small>This
-                                    week</small></span>
-                        </div>
-                        <div id="sparkline-bar"></div>
-                    </div>
-                </div>
-                <div class="col s12 m12 l4">
-                    <div class="card stats-card">
-                        <div class="card-content">
-                            <div class="card-options">
-                                <ul>
-                                    <li><a href="javascript:void(0)"><i class="material-icons">more_vert</i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <span class="card-title">Page views</span>
-                            <span class="stats-counter"><span class="counter">83710</span><small>This
+                        <span class="card-title">Page views</span>
+                        <span class="stats-counter"><span class="counter">83710</span><small>This
                                     month</small></span>
-                        </div>
-                        <div id="sparkline-line"></div>
                     </div>
+                    <div id="sparkline-line"></div>
                 </div>
-                <div class="col s12 m12 l4">
-                    <div class="card stats-card">
-                        <div class="card-content">
-                            <span class="card-title">Reports</span>
-                            <span class="stats-counter"><span class="counter">23230</span><small>Last
+            </div>
+            <div class="col s12 m12 l4">
+                <div class="card stats-card">
+                    <div class="card-content">
+                        <span class="card-title">Reports</span>
+                        <span class="stats-counter"><span class="counter">23230</span><small>Last
                                     week</small></span>
-                            <div class="percent-info green-text">8% <i class="material-icons">trending_up</i></div>
-                        </div>
-                        <div class="progress stats-card-progress">
-                            <div class="determinate" style="width: 70%"></div>
-                        </div>
+                        <div class="percent-info green-text">8% <i class="material-icons">trending_up</i></div>
+                    </div>
+                    <div class="progress stats-card-progress">
+                        <div class="determinate" style="width: 70%"></div>
                     </div>
                 </div>
             </div>
-            <div class="row m-t-xs">
-                <div class="col s12 m12 l12">
-                    <a href="#create_user_modal" class="waves-effect waves-light btn red right modal-trigger"><i
-                            class="material-icons left">add</i>CREATE NEW USER</a>
-                </div>
+        </div>
+        <div class="row m-t-xs">
+            <div class="col s12 m12 l12">
+                <a href="#create_user_modal" class="waves-effect waves-light btn red right modal-trigger"><i
+                        class="material-icons left">add</i>CREATE NEW USER</a>
             </div>
-            <div class="row no-m-t no-m-b">
-                <div class="col s12 m12 l12 alert alert-danger">
+        </div>
+        <div class="row no-m-t no-m-b">
+            <div class="col s12 m12 l12 alert alert-danger">
                     <span class="valign-wrapper">
                         <i class="small material-icons">notification_important</i>
                         <p> Couldn't create the user, Please try again!</p>
                     </span>
-                </div>
-                <div class="col s12 m12 l12 alert alert-success">
+            </div>
+            <div class="col s12 m12 l12 alert alert-success">
                     <span class="valign-wrapper">
                         <i class="small material-icons">task_alt</i>
                         <p> User <b>dev.user</b> has created successfully. You can view, edit the in the
                             below.</p>
                     </span>
-                </div>
-                <div class="col s12 m12 l12 alert alert-danger">
+            </div>
+            <div class="col s12 m12 l12 alert alert-danger">
                     <span class="valign-wrapper">
                         <i class="small material-icons">notification_important</i>
                         <p> Couldn't update the user, Please try again!</p>
                     </span>
-                </div>
-                <div class="col s12 m12 l12 alert alert-success">
+            </div>
+            <div class="col s12 m12 l12 alert alert-success">
                     <span class="valign-wrapper">
                         <i class="small material-icons">task_alt</i>
                         <p> User dev.user has updated successfully. You can view, edit the in the below.</p>
                     </span>
-                </div>
-                <div class="col s12 m12 l12 alert alert-danger">
+            </div>
+            <div class="col s12 m12 l12 alert alert-danger">
                     <span class="valign-wrapper">
                         <i class="small material-icons">notification_important</i>
                         <p> Couldn't delete the user, Please try again!</p>
                     </span>
-                </div>
-                <div class="col s12 m12 l12 alert alert-success">
+            </div>
+            <div class="col s12 m12 l12 alert alert-success">
                     <span class="valign-wrapper">
                         <i class="small material-icons">task_alt</i>
                         <p> User dev.user has updated successfully.</p>
                     </span>
-                </div>
-                <div class="row">
-                    <div class="col s12">
-                        <div class="card">
-                            <div class="card-content">
-                                <span class="card-title">User List</span>
-                                <table id="manage_users_tbl"
-                                    class="display responsive-table datatable-example data_table">
-                                    <thead>
-                                        <tr>
-                                            <th>ID</th>
-                                            <th>Username</th>
-                                            <th>Mobile</th>
-                                            <th>Opening Date</th>
-                                            <th>More Details</th>
-                                            <th>Actions</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>#203</td>
-                                            <td>PayPal</td>
-                                            <td>01833184012</td>
-                                            <td>10.00 AM 21/12/2020</td>
-                                            <td><a class="waves-effect waves-teal btn-flat"><i
-                                                        class="material-icons left">visibility</i>View
-                                                    Details</a></td>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">User List</span>
+                            <table id="manage_users_tbl"
+                                   class="display responsive-table datatable-example data_table">
+                                <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Username</th>
+                                    <th>Mobile</th>
+                                    <th>Opening Date</th>
+                                    <th>More Details</th>
+                                    <th>Actions</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>#203</td>
+                                    <td>PayPal</td>
+                                    <td>01833184012</td>
+                                    <td>10.00 AM 21/12/2020</td>
+                                    <td><a class="waves-effect waves-teal btn-flat modal-trigger"
+                                           href="#user_details_modal"><i
+                                            class="material-icons left">visibility</i>View
+                                        Details</a></td>
 
 
-                                            <td><a class="modal-trigger" href="#edit_user_modal"><i
-                                                        class="fa fa-edit font-golden"></i>
-                                                    <span class="text-color">edit</span> </a> /
-                                                <a href="#edit_user_modal" class="">
-                                                    <i class="fa fa-trash font-red"></i> <span
-                                                        class="text-color">delete</span></a>
-                                            </td>
-
-                                            <!-- <i
-                                                    class="material-icons left">create</i> edit</a> /
-                                            <a href="#delete_user_modal"
-                                                class="waves-effect waves-teal red-text modal-trigger"><i
-                                                    class="material-icons left">clear</i>delete</a> -->
-
-                                            <!-- </td> -->
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                                    <td><a class="modal-trigger" href="#edit_user_modal"><i
+                                            class="fa fa-edit font-golden"></i>
+                                        <span class="text-color">edit</span> </a> /
+                                        <a href="#delete_user_modal" class="modal-trigger">
+                                            <i class="fa fa-trash font-red"></i> <span
+                                                class="text-color">delete</span></a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
-
             </div>
-        </main>
-        <div class="page-footer">
-            <div class="footer-grid container">
-                <div class="footer-l white">&nbsp;</div>
-                <div class="footer-grid-l white">
-                </div>
-                <div class="footer-r white">&nbsp;</div>
-                <div class="footer-grid-r white">
-                    <a class="footer-text" href="#">
-                        <i class="material-icons arrow-r">arrow_forward</i>
-                        <span class="direction">Next</span>
-                        <div>
-                            Mailbox app
-                        </div>
-                    </a>
-                </div>
+
+        </div>
+    </main>
+    <div class="page-footer">
+        <div class="footer-grid container">
+            <div class="footer-l white">&nbsp;</div>
+            <div class="footer-grid-l white">
+            </div>
+            <div class="footer-r white">&nbsp;</div>
+            <div class="footer-grid-r white">
+                <a class="footer-text" href="#">
+                    <i class="material-icons arrow-r">arrow_forward</i>
+                    <span class="direction">Next</span>
+                    <div>
+                        Mailbox app
+                    </div>
+                </a>
             </div>
         </div>
     </div>
-    <div class="left-sidebar-hover"></div>
+</div>
+<div class="left-sidebar-hover"></div>
 
-    <!-- Create User Modal -->
-    <div id="create_user_modal" class="modal modal-md">
-        <div class="modal-content">
-            <h4>New User</h4>
-            <form class="col s12">
-                <div class="row">
-                    <div class="input-field col s6">
-                        <input id="name" type="text" class="validate">
-                        <label for="name">Name</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <input id="mobile" type="text" class="validate">
-                        <label for="mobile">Mobile</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <input id="email" type="text" class="validate">
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <input id="address" type="text" class="validate">
-                        <label for="address">Address</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <input id="username" type="text" class="validate">
-                        <label for="username">Username</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <input id="password" type="text" class="validate">
-                        <label for="password">Password</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <input id="password2" type="text" class="validate">
-                        <label for="password2">Confirm Password</label>
-                    </div>
+<!-- Create User Modal -->
+<div id="create_user_modal" class="modal">
+    <div class="modal-content">
+        <h4>New User</h4>
+        <div class="divider"></div>
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="name" type="text" class="validate">
+                    <label for="name">Name</label>
                 </div>
-                <div class="row">
-                    <div class="col s12 m12 l12 center">
-                        <button type="submit" class="waves-effect waves-light btn red center"><i
-                                class="material-icons left">add</i>CREATE NEW USER</button>
-                    </div>
+                <div class="input-field col s6">
+                    <input id="mobile" type="text" class="validate">
+                    <label for="mobile">Mobile</label>
                 </div>
-            </form>
-        </div>
-        <div class="modal-footer">
-
-        </div>
-    </div>
-
-    <!-- Password Policy Modal -->
-    <div id="password_policy_modal" class="modal">
-        <div class="modal-content">
-            <h4>Password Policy</h4>
-            <!--<span>
-            <i class="material-icons">info</i><p>We are very strict about our password policy. Read through  our policy to maintain our password policy to continuously use our services without interruption.</p>
-        </span>-->
-            <ol>
-                <li>Password <b>MUST</b> be changed in every 3 month.</li>
-                <li>Password <b>MUST</b> contain at least one number.</li>
-                <li>Password <b>MUST</b> contain at least one uppercase and one lower case letter.</li>
-                <li>Password <b>MUST</b> contain one special character [@,$,%,&,^].</li>
-                <li>Password <b>MUST</b> be long at least 8 characters.</li>
-            </ol>
-        </div>
-        <div class="modal-footer">
-            <a href="#password_policy_modal" class="modal-action modal-close waves-effect btn red">Close</a>
-        </div>
-    </div>
-
-
-    <!-- Edit User Modal -->
-    <!-- <div id="edit_user_modal" class="modal">
-        <div class="modal-header">
-            <h5 class="modal-title">Confirm Action</h5>
-        </div>
-        <div class="modal-content">
-            <p>Are you sure to want delete the user <b>dev.user</b></p>
-            <p>Deleting an user is permanent and can not be undone. Please confirm if you really want to delete the
-                user.</p>
-        </div>
-        <div class="modal-footer center-align">
-            <a href="#password_policy_modal" class="modal-action modal-close waves-effect btn red">Confirm</a>
-        </div>
-    </div> -->
-    <!-- Edit User -->
-    <div id="edit_user_modal" class="modal">
-        <!-- <div class="valign-wrapper">
-            <div class="valign">
-                <div class="center-align"> This is test text</div>
-
+                <div class="input-field col s6">
+                    <input id="email" type="text" class="validate">
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="address" type="text" class="validate">
+                    <label for="address">Address</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="username" type="text" class="validate">
+                    <label for="username">Username</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="password" type="text" class="validate">
+                    <label for="password">Password</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="password2" type="text" class="validate">
+                    <label for="password2">Confirm Password</label>
+                </div>
             </div>
-        </div> -->
-        <div class="modal-content">
-            <h4 class="teal-text">Confirm Action</h4>
-            <p class="truncate">A bunch of text sajhdkahsdkla jhskdj hasjkdh aksjdh kasjhd kasjhdk ashjdk has</p>
-        </div>
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col s12 m12 l12 center">
+                    <button type="submit" class="waves-effect waves-light btn red center"><i
+                            class="material-icons left">add</i>CREATE NEW USER
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- User Details Modal -->
+<div id="user_details_modal" class="modal">
+    <div class="modal-content">
+        <h4>User Details</h4>
+        <div class="divider"></div>
         <div class="row">
-            <div class="col s10 offset-s1 center-align">
-                <a href="#" class="waves-effect waves-light btn red-bg ">Confirm</a>
+            <div class="input-field col s6">
+                <input id="name_ud" type="text" class="validate">
+                <label for="name_ud">Name</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="mobile_ud" type="text" class="validate">
+                <label for="mobile_ud">Mobile</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="email_ud" type="text" class="validate">
+                <label for="email_ud">Email</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="address_ud" type="text" class="validate">
+                <label for="address_ud">Address</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="username_ud" type="text" class="validate">
+                <label for="username_ud">Username</label>
             </div>
         </div>
-        <!-- Verticle -->
-        <!-- <div class="row">
-            <div class="valign-wrapper">
-                <div class="col s12 center-align">
-                    Text
-                </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col s12 m12 l12 center">
+                <button type="submit" class="waves-effect waves-light btn red center modal-action modal-close"><i
+                        class="material-icons left">clear</i>Close
+                </button>
             </div>
-        </div> -->
-        <!-- Horizontal -->
-
+        </div>
     </div>
+</div>
 
-    <!-- Delete User Modal -->
-    <div id="delete_user_modal" class="modal">
-        <div class="modal-header red">
-            <h5 class="modal-title">Confirm Action</h5>
+<!-- Password Policy Modal -->
+<div id="password_policy_modal" class="modal">
+    <div class="modal-content">
+        <h4>Password Policy</h4>
+        <ol>
+            <li>Password <b>MUST</b> be changed in every 3 month.</li>
+            <li>Password <b>MUST</b> contain at least one number.</li>
+            <li>Password <b>MUST</b> contain at least one uppercase and one lower case letter.</li>
+            <li>Password <b>MUST</b> contain one special character [@,$,%,&,^].</li>
+            <li>Password <b>MUST</b> be long at least 8 characters.</li>
+        </ol>
+    </div>
+    <div class="modal-footer">
+        <a href="#password_policy_modal" class="modal-action modal-close waves-effect btn red">Close</a>
+    </div>
+</div>
+
+<!-- Edit User -->
+<div id="edit_user_modal" class="modal">
+    <div class="modal-content">
+        <h4 class="teal-text">Confirm Action</h4>
+        <p class="truncate">A bunch of text sajhdkahsdkla jhskdj hasjkdh aksjdh kasjhd kasjhdk ashjdk has</p>
+    </div>
+    <div class="row">
+        <div class="col s10 offset-s1 center-align">
+            <a href="#" class="waves-effect waves-light btn red-bg ">Confirm</a>
         </div>
-        <div class="modal-content">
-            <p>Are you sure to want delete the user <b>dev.user</b></p>
-            <p>Deleting an user is permanent and can not be undone. Please confirm if you really want to delete the
-                user.</p>
-        </div>
-        <div class="modal-footer center-align">
+    </div>
+</div>
+
+<!-- Delete User Modal -->
+<div id="delete_user_modal" class="modal">
+    <div class="modal-content">
+        <h5 class="modal-title">Confirm Action</h5>
+        <div class="divider"></div>
+        <p>Are you sure to want delete the user <b>dev.user</b></p>
+        <p>Deleting an user is permanent and can not be undone. Please confirm if you really want to delete the
+            user.</p>
+        <div class="divider"></div>
+        <div class="section center-align">
             <a href="#password_policy_modal" class="modal-action modal-close waves-effect btn red">Confirm</a>
         </div>
     </div>
+</div>
 
-    <!-- Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
+</script>
 
-    <!-- Javascripts -->
+<!-- Javascripts -->
 
-    <script src="../assets/plugins/jquery/jquery-2.2.0.min.js"></script>
-    <script src="../assets/plugins/materialize/js/materialize.min.js"></script>
-    <script src="../assets/plugins/material-preloader/js/materialPreloader.min.js"></script>
-    <script src="../assets/plugins/jquery-blockui/jquery.blockui.js"></script>
-    <script src="../assets/plugins/waypoints/jquery.waypoints.min.js"></script>
-    <script src="../assets/plugins/counter-up-master/jquery.counterup.min.js"></script>
-    <script src="../assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
-    <script src="../assets/plugins/peity/jquery.peity.min.js"></script>
-    <script src="../assets/js/alpha.min.js"></script>
+<script src="../assets/plugins/jquery/jquery-2.2.0.min.js"></script>
+<script src="../assets/plugins/materialize/js/materialize.min.js"></script>
+<script src="../assets/plugins/material-preloader/js/materialPreloader.min.js"></script>
+<script src="../assets/plugins/jquery-blockui/jquery.blockui.js"></script>
+<script src="../assets/plugins/waypoints/jquery.waypoints.min.js"></script>
+<script src="../assets/plugins/counter-up-master/jquery.counterup.min.js"></script>
+<script src="../assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+<script src="../assets/plugins/peity/jquery.peity.min.js"></script>
+<script src="../assets/js/alpha.min.js"></script>
+<script src="../assets/plugins/datatables/js/jquery.dataTables.min.js"></script>
+<script src="../assets/js/pages/table-data.js"></script>
+<script src="../assets/js/custom.js"></script>
 
-
-
-    <script src="../assets/plugins/datatables/js/jquery.dataTables.min.js"></script>
-    <script src="../assets/js/pages/table-data.js"></script>
-    <script src="../assets/js/custom.js"></script>
 </body>
-
 </html>
